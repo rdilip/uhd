@@ -392,6 +392,7 @@ b200_impl::b200_impl(const uhd::device_addr_t& device_addr, usb_device_handle::s
 
     UHD_LOGGER_INFO("B200") << "Detected Device: " << B2XX_STR_NAMES[_product] ;
 
+
     _gpsdo_capable = (not (_product == B200MINI or _product == B205MINI));
 
     ////////////////////////////////////////////////////////////////////
@@ -900,17 +901,33 @@ void b200_impl::setup_radio(const size_t dspno)
       .add_coerced_subscriber(boost::bind(&set_llr_reg4, perif.ctrl, _1))
       .set(0x00);
 
-	int a, b;
-	std::ifstream infile("freq.txt");
-	while (infile >> a >> b) {
-		std::string id = std::to_string(a);
-		std::string file_start = "llr_reg";
-		std::string file_spec = file_start + id;
-		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(b);
+	int i;
+	double j;
+	std::string file_spec;
+	std::ifstream inFile("/home/thompsonlab/Documents/uhd/host/lib/usrp/b200/freq.txt");
+	
+	if (!inFile) {
+	UHD_LOGGER_INFO("B200") << "Could not open frequency file";
 	}
-    // End JTL added code.
+	
+	while (!inFile.eof()) {
+		inFile >> i >> j;
+		std::string id = std::to_string(i);
+		std::string file_start = "llr_reg";
+		file_spec = file_start + id;
+		if (i == -1) {
+			break;
+		} else {
+		j = (int)((j / 32.768)*(std::pow(2,32)));
+		UHD_LOGGER_INFO("B200") << "Rohit file detected: " << file_spec << " " << j;
+		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(j);
+		}
+	}
 
-    ////////////////////////////////////////////////////////////////////
+	// END JTL code
+	
+
+	    ////////////////////////////////////////////////////////////////////
     // create RF frontend interfacing
     ////////////////////////////////////////////////////////////////////
     static const std::vector<direction_t> dirs = boost::assign::list_of(RX_DIRECTION)(TX_DIRECTION);
