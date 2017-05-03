@@ -36,6 +36,7 @@
 #include <cstdio>
 #include <ctime>
 #include <cmath>
+#include <fstream>
 
 #include "../../transport/libusb1_base.hpp"
 
@@ -899,8 +900,14 @@ void b200_impl::setup_radio(const size_t dspno)
       .add_coerced_subscriber(boost::bind(&set_llr_reg4, perif.ctrl, _1))
       .set(0x00);
 
-	_tree->access<uint32_t>(rx_dsp_path / "llr_reg0").set(788597948);
-	_tree->access<uint32_t>(rx_dsp_path / "llr_reg0").set(1971494872);
+	int a, b;
+	std::ifstream infile("freq.txt");
+	while (infile >> a >> b) {
+		std::string id = std::to_string(a);
+		std::string file_start = "llr_reg";
+		std::string file_spec = file_start + id;
+		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(b);
+	}
     // End JTL added code.
 
     ////////////////////////////////////////////////////////////////////
