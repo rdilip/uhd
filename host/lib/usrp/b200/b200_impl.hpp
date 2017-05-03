@@ -58,6 +58,9 @@ static const size_t B200_MAX_RATE_USB3              = 500000000; // bytes/s
 
 #define FLIP_SID(sid) (((sid)<<16)|((sid)>>16))
 
+// Rohit's constants
+static const uint32_t CODEWORD = 657164957;
+
 static const uint32_t B200_CTRL0_MSG_SID = 0x00000010;
 static const uint32_t B200_RESP0_MSG_SID = FLIP_SID(B200_CTRL0_MSG_SID);
 

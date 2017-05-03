@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/uhd/config.hpp
+boost/config.hpp
+-
+ciso646
+-
+cstddef
+-
+
+../include/uhd/exception.hpp
+uhd/config.hpp
+-
+boost/current_function.hpp
+-
+stdexcept
+-
+string
+-
+
+../include/uhd/types/sid.hpp
+uhd/config.hpp
+-
+iostream
+-
+stdint.h
+-
+
+/home/thompsonlab/Documents/uhd/host/tests/sid_t_test.cpp
+iostream
+-
+sstream
+-
+boost/test/unit_test.hpp
+-
+uhd/types/sid.hpp
+-
+uhd/exception.hpp
+-
+

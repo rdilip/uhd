@@ -46,7 +46,21 @@ localparam SR_TX_DSP    = 184;
 localparam SR_TIME      = 128;
 localparam SR_RX_FMT    = 136;
 localparam SR_TX_FMT    = 138;
+//JTL start
+localparam SR_CMD_RX      = 160;//sr_cmd_tx
+localparam SR_TIME_H_RX   = 161;//sr_time_h_tx
+localparam SR_TIME_L_RX   = 162;//sr_time_l_tx
+localparam SR_CNTRL       = 163;//sr_cntrl
+localparam SR_LLR_REG0    = 164;//sr_llr_reg0
+localparam SR_LLR_REG1    = 165;//sr_llr_reg1
+localparam SR_LLR_REG2    = 166;//sr_llr_reg2
+localparam SR_LLR_REG3    = 167;//sr_llr_reg3
+localparam SR_LLR_REG4    = 168;//sr_llr_reg4
+// JTL end
+
+
 localparam SR_FP_GPIO   = 200;
+
 
 localparam RB32_TEST            = 0;
 localparam RB64_TIME_NOW        = 8;

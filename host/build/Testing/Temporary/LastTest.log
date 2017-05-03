@@ -1,0 +1,1100 @@
+Start testing: May 01 15:43 EDT
+----------------------------------------------------------
+1/33 Testing: addr_test
+1/33 Test: addr_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/addr_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"addr_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 3 test cases...
+Testing mac addr...
+Input: 00:01:23:45:67:89
+Output: 00:01:23:45:67:89
+Testing device addr...
+Pretty Print: 
+Device Address:
+    key1: val1
+    key3: 
+Args String: key1=val1,key3=
+Merged: key1=val1,key2=val2x,key3=val3
+Testing dboard id...
+Pretty Print: 
+Unknown (0xffff)
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"addr_test" end time: May 01 15:43 EDT
+"addr_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/33 Testing: buffer_test
+2/33 Test: buffer_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/buffer_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"buffer_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 2 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"buffer_test" end time: May 01 15:43 EDT
+"buffer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/33 Testing: byteswap_test
+3/33 Test: byteswap_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/byteswap_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"byteswap_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 3 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"byteswap_test" end time: May 01 15:43 EDT
+"byteswap_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/33 Testing: cast_test
+4/33 Test: cast_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/cast_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"cast_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 1 test case...
+Testing hex -> uint16_t conversion. 0x0100 == 100?
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cast_test" end time: May 01 15:43 EDT
+"cast_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/33 Testing: cal_container_test
+5/33 Test: cal_container_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/cal_container_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"cal_container_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+[33;1m[WARNING] [CAL] [39;0mBilinear interpolation: singular matrix detected. Performing 1D linear interpolation against the nearest measurements. Provide calibration data with more measurements
+Running 5 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cal_container_test" end time: May 01 15:43 EDT
+"cal_container_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/33 Testing: chdr_test
+6/33 Test: chdr_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/chdr_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"chdr_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 5 test cases...
+
+header bits = 0b0010
+packet_buff[0] = 0x2007006f
+packet_buff[1] = 0xaabbccdd
+packet_buff[2] = 0x12345678
+packet_buff[3] = 0x90abcdef
+packet_buff[4] = 0x00000000
+
+header bits = 0b0100
+packet_buff[0] = 0x40130018
+packet_buff[1] = 0xaabbccdd
+packet_buff[2] = 0x00000000
+packet_buff[3] = 0x00000000
+packet_buff[4] = 0x00000000
+
+header bits = 0b1010
+packet_buff[0] = 0xa0130020
+packet_buff[1] = 0xaabbccdd
+packet_buff[2] = 0x12345678
+packet_buff[3] = 0x90abcdef
+packet_buff[4] = 0x00000000
+
+header bits = 0b1100
+packet_buff[0] = 0xc07b0018
+packet_buff[1] = 0xaabbccdd
+packet_buff[2] = 0x00000000
+packet_buff[3] = 0x00000000
+packet_buff[4] = 0x00000000
+
+header bits = 0b1100
+packet_buff[0] = 0xc7880018
+packet_buff[1] = 0xaabbccdd
+packet_buff[2] = 0x00000000
+packet_buff[3] = 0x00000000
+packet_buff[4] = 0x00000000
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"chdr_test" end time: May 01 15:43 EDT
+"chdr_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/33 Testing: convert_test
+7/33 Test: convert_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/convert_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"convert_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 20 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"convert_test" end time: May 01 15:43 EDT
+"convert_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/33 Testing: dict_test
+8/33 Test: dict_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/dict_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"dict_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 5 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"dict_test" end time: May 01 15:43 EDT
+"dict_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/33 Testing: error_test
+9/33 Test: error_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/error_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"error_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 4 test cases...
+what: AssertionError: your assertion failed: 1 != 2
+code: 2508
+The output of the assert_has error:
+AssertionError: assertion failed:
+  1 is not a valid prime.
+  possible values are: [2, 3, 5].
+
+The output of the assert throw error:
+AssertionError: 2 + 2 == 5
+  in void test_assert_throw::test_method()
+  at /home/thompsonlab/Documents/uhd/host/tests/error_test.cpp:56
+
+RuntimeError: noooooo
+RuntimeError: noooooo
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"error_test" end time: May 01 15:43 EDT
+"error_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/33 Testing: fp_compare_delta_test
+10/33 Test: fp_compare_delta_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/fp_compare_delta_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"fp_compare_delta_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 16 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"fp_compare_delta_test" end time: May 01 15:43 EDT
+"fp_compare_delta_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/33 Testing: fp_compare_epsilon_test
+11/33 Test: fp_compare_epsilon_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/fp_compare_epsilon_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"fp_compare_epsilon_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 14 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"fp_compare_epsilon_test" end time: May 01 15:43 EDT
+"fp_compare_epsilon_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/33 Testing: gain_group_test
+12/33 Test: gain_group_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/gain_group_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"gain_group_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 2 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"gain_group_test" end time: May 01 15:43 EDT
+"gain_group_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/33 Testing: log_test
+13/33 Test: log_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/log_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"log_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 1 test case...
+---begin print test ---
+[32;1m[INFO] [logger_test] [39;0mThis is a test print for a info log.
+[33;1m[WARNING] [logger_test] [39;0mThis is a test print for a warning log.
+[31;0m[ERROR] [logger_test] [39;0mThis is a test print for an error log.
+---end print test ---
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"log_test" end time: May 01 15:43 EDT
+"log_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/33 Testing: math_test
+14/33 Test: math_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/math_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"math_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"math_test" end time: May 01 15:43 EDT
+"math_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/33 Testing: property_test
+15/33 Test: property_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/property_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"property_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 10 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"property_test" end time: May 01 15:43 EDT
+"property_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/33 Testing: ranges_test
+16/33 Test: ranges_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/ranges_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"ranges_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 3 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ranges_test" end time: May 01 15:43 EDT
+"ranges_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/33 Testing: sid_t_test
+17/33 Test: sid_t_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/sid_t_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"sid_t_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 3 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"sid_t_test" end time: May 01 15:43 EDT
+"sid_t_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/33 Testing: sph_recv_test
+18/33 Test: sph_recv_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/sph_recv_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"sph_recv_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 8 test cases...
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+Ddata check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+Ometadata.error_code 8
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+Ddata check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+exception check
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+timeout check 0
+timeout check 1
+timeout check 2
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"sph_recv_test" end time: May 01 15:43 EDT
+"sph_recv_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/33 Testing: sph_send_test
+19/33 Test: sph_send_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/sph_send_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"sph_send_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 2 test cases...
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+data check 0
+data check 1
+data check 2
+data check 3
+data check 4
+data check 5
+data check 6
+data check 7
+data check 8
+data check 9
+data check 10
+data check 11
+data check 12
+data check 13
+data check 14
+data check 15
+data check 16
+data check 17
+data check 18
+data check 19
+data check 20
+data check 21
+data check 22
+data check 23
+data check 24
+data check 25
+data check 26
+data check 27
+data check 28
+data check 29
+
+*** No errors detected
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"sph_send_test" end time: May 01 15:43 EDT
+"sph_send_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/33 Testing: subdev_spec_test
+20/33 Test: subdev_spec_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/subdev_spec_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"subdev_spec_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 1 test case...
+Testing subdevice specification...
+Pretty Print: 
+Subdevice Specification:
+    Channel 0: Daughterboard A, Subdevice AB
+    Channel 1: Daughterboard B, Subdevice AB
+Markup String: A:AB B:AB
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"subdev_spec_test" end time: May 01 15:43 EDT
+"subdev_spec_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/33 Testing: time_spec_test
+21/33 Test: time_spec_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/time_spec_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"time_spec_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 7 test cases...
+Testing time specification compare...
+Testing time specification arithmetic...
+Testing time specification parts...
+Testing time specification get system time...
+start: 2.39852e+06
+stop: 2.39852e+06
+diff: 0.50008
+ts1 0.3
+ts2 0.1
+tsa 430.001
+tsb 430
+tsc 0.3
+tsd 0.001265
+sizeof(time_t) 8
+t0.get_real_secs() 1.36022e+09
+t0.get_full_secs() 1360217663
+t0.get_frac_secs() 0.739296
+time ............ 86486534.0000012368
+tick in ......... 23423436291667
+tick out ........ 23423436291667
+tick error ...... 0
+
+
+*** No errors detected
+<end of output>
+Test time =   0.51 sec
+----------------------------------------------------------
+Test Passed.
+"time_spec_test" end time: May 01 15:43 EDT
+"time_spec_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/33 Testing: vrt_test
+22/33 Test: vrt_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/vrt_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"vrt_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 7 test cases...
+
+packet_buff[0] = 0x1
+packet_buff[1] = 0x0
+packet_buff[2] = 0x66666666
+packet_buff[3] = 0x66264440
+packet_buff[4] = 0x100
+
+packet_buff[0] = 0x1001000d
+packet_buff[1] = 0x6b8b4567
+packet_buff[2] = 0x66666666
+packet_buff[3] = 0x66264440
+packet_buff[4] = 0x100
+
+packet_buff[0] = 0x20017
+packet_buff[1] = 0x6b8b4567
+packet_buff[2] = 0x66666666
+packet_buff[3] = 0x66264440
+packet_buff[4] = 0x100
+
+packet_buff[0] = 0xd30025
+packet_buff[1] = 0x643c9869
+packet_buff[2] = 0x0
+packet_buff[3] = 0x66334873
+packet_buff[4] = 0x100
+
+packet_buff[0] = 0x10d40031
+packet_buff[1] = 0x74b0dc51
+packet_buff[2] = 0x2ae8944a
+packet_buff[3] = 0x0
+packet_buff[4] = 0x625558ec
+
+packet_buff[0] = 0x56524c50
+packet_buff[1] = 0x300032
+packet_buff[2] = 0x1413002f
+packet_buff[3] = 0x0
+packet_buff[4] = 0x0
+
+packet_buff[0] = 0x20070070
+packet_buff[1] = 0x0
+packet_buff[2] = 0x0
+packet_buff[3] = 0x507ed7ab
+packet_buff[4] = 0x0
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"vrt_test" end time: May 01 15:43 EDT
+"vrt_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/33 Testing: expert_test
+23/33 Test: expert_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/expert_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"expert_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 1 test case...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"expert_test" end time: May 01 15:43 EDT
+"expert_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/33 Testing: fe_conn_test
+24/33 Test: fe_conn_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/fe_conn_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"fe_conn_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 4 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"fe_conn_test" end time: May 01 15:43 EDT
+"fe_conn_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/33 Testing: eeprom_c_test
+25/33 Test: eeprom_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/eeprom_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"eeprom_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+
+No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"eeprom_c_test" end time: May 01 15:43 EDT
+"eeprom_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/33 Testing: error_c_test
+26/33 Test: error_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/error_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"error_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 4 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"error_c_test" end time: May 01 15:43 EDT
+"error_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/33 Testing: ranges_c_test
+27/33 Test: ranges_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/ranges_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"ranges_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+
+No errors detected.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ranges_c_test" end time: May 01 15:43 EDT
+"ranges_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/33 Testing: sensors_c_test
+28/33 Test: sensors_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/sensors_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"sensors_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+
+No errors detected.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"sensors_c_test" end time: May 01 15:43 EDT
+"sensors_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/33 Testing: string_vector_c_test
+29/33 Test: string_vector_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/string_vector_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"string_vector_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+
+No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"string_vector_c_test" end time: May 01 15:43 EDT
+"string_vector_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/33 Testing: subdev_spec_c_test
+30/33 Test: subdev_spec_c_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/subdev_spec_c_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"subdev_spec_c_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Testing subdevice specification...
+Pretty Print:
+Subdevice Specification:
+    Channel 0: Daughterboard A, Subdevice AB
+    Channel 1: Daughterboard B, Subdevice AB
+Markup String: A:AB B:AB
+
+No errors detected.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"subdev_spec_c_test" end time: May 01 15:43 EDT
+"subdev_spec_c_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/33 Testing: nocscript_expr_test
+31/33 Test: nocscript_expr_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/nocscript_expr_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"nocscript_expr_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 7 test cases...
+Returning type for $spp...
+Returning value for $spp...
+One true, OR: 
+
+
+Two true, one false, OR: 
+
+
+Two false, AND: 
+Checking type inference on ',' sequences: 
+Calling AND
+Calling AND
+Calling AND
+Calling AND
+Returning type for $spp...
+Returning value for $spp...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"nocscript_expr_test" end time: May 01 15:43 EDT
+"nocscript_expr_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/33 Testing: nocscript_ftable_test
+32/33 Test: nocscript_ftable_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/nocscript_ftable_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"nocscript_ftable_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 4 test cases...
+Checking ~1s sleep until... Now.
+Dummy statement should run once until END:
+Running dummy/true statement.
+END.
+Dummy statement should not run until END:
+END.
+Should execute dummy/true statement before END:
+Running dummy/true statement.
+END.
+Should execute dummy/false statement before END:
+Running dummy/false statement.
+END.
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"nocscript_ftable_test" end time: May 01 15:43 EDT
+"nocscript_ftable_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/33 Testing: nocscript_parser_test
+33/33 Test: nocscript_parser_test
+Command: "/bin/sh" "/home/thompsonlab/Documents/uhd/host/build/tests/nocscript_parser_test_test.sh"
+Directory: /home/thompsonlab/Documents/uhd/host/build/tests
+"nocscript_parser_test" start time: May 01 15:43 EDT
+Output:
+----------------------------------------------------------
+[32;1m[INFO] [UHD] [39;0mlinux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_3.11.0.git-162-g2790b51f
+Running 6 test cases...
+Returning type for $spp...
+Returning value for $spp...
+Returning type for $spp...
+Returning type for $spp...
+Returning type for $spp...
+Returning value for $spp...
+Returning value for $spp...
+Returning value for $spp...
+Returning value for $spp...
+Running dummy/false statement.
+Running dummy/false statement.
+Running dummy/false statement.
+Running dummy/false statement.
+Running dummy/false statement.
+Running dummy/false statement.
+Running dummy/false statement.
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"nocscript_parser_test" end time: May 01 15:43 EDT
+"nocscript_parser_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 01 15:43 EDT

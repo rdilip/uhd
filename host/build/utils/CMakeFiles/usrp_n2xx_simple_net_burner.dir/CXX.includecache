@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thompsonlab/Documents/uhd/host/utils/usrp_n2xx_simple_net_burner.cpp
+boost/program_options.hpp
+-
+boost/format.hpp
+-
+iostream
+-
+

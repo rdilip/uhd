@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thompsonlab/Documents/uhd/host/utils/usrp_x3xx_fpga_burner.cpp
+iostream
+-
+boost/program_options.hpp
+-
+boost/format.hpp
+-
+

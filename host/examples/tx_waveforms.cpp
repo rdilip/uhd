@@ -30,6 +30,13 @@
 #include <stdint.h>
 #include <iostream>
 #include <csignal>
+#include "usage.h"
+
+#include <complex>
+#include <uhd/usrp/multi_usrp.hpp>
+#include <vector>
+
+
 
 namespace po = boost::program_options;
 
@@ -42,6 +49,16 @@ void sig_int_handler(int){stop_signal_called = true;}
 /***********************************************************************
  * Main function
  **********************************************************************/
+static void print_tree(const uhd::property_tree::sptr tree, const std::string prefix) {
+  std::cout << prefix << std::endl;
+  std::vector<std::string> names = tree->list("");
+  for (std::vector<std::string>::iterator it = names.begin() ; it != names.end(); ++it) {
+    uhd::property_tree::sptr subtree = tree->subtree(*it);
+    if (subtree)
+      print_tree(subtree, prefix+'/'+*it);
+  }
+}
+
 int UHD_SAFE_MAIN(int argc, char *argv[]){
     uhd::set_thread_priority_safe();
 
@@ -103,6 +120,31 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
 
     //Lock mboard clocks
     usrp->set_clock_source(ref);
+    //////////////////////////////////////////////////////////
+    // JTL's code
+/*
+    uhd::property_tree::sptr tree;
+    uint32_t ll_values=1117180427;
+	print_tree(tree, "JTL");	
+    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg0")
+          .set(ll_values);
+		  */
+
+/*
+    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg1")
+          .set(ll_values);
+    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg2")
+          .set(ll_values);
+    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg3")
+          .set(ll_values);
+    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg4")
+          .set(ll_values);
+*/
+
+    //USRPController m;
+    //m.programLLRValues(); 
+    // END JTL CODE
+    //////////////////////////////////////////////////////////
 
     //always select the subdevice first, the channel mapping affects the other settings
     if (vm.count("subdev")) usrp->set_tx_subdev_spec(subdev);
@@ -273,3 +315,4 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     std::cout << std::endl << "Done!" << std::endl << std::endl;
     return EXIT_SUCCESS;
 }
+

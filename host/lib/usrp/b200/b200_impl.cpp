@@ -1,5 +1,4 @@
-//
-// Copyright 2012-2015 Ettus Research LLC
+// // Copyright 2012-2015 Ettus Research LLC
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -730,6 +729,46 @@ b200_impl::~b200_impl(void)
     )
 }
 
+// Adding code to poke the thing. A lot of this is unecessary. JTL
+static void set_cmd_rx(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_CMD_RX), val);
+}
+static void set_time_h_rx(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_TIME_H_RX), val);
+}
+static void set_time_l_rx(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_TIME_L_RX), val);
+}
+static void set_cntrl(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_CNTRL), val);
+}
+static void set_llr_reg0(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG0), val);
+}
+static void set_llr_reg1(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG1), val);
+}
+static void set_llr_reg2(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG2), val);
+}
+static void set_llr_reg3(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG3), val);
+}
+static void set_llr_reg4(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG4), val);
+}
+// Ending code added by JTL.
+
+
 /***********************************************************************
  * setup radio control objects
  **********************************************************************/
@@ -824,6 +863,45 @@ void b200_impl::setup_radio(const size_t dspno)
     _tree->access<double>(mb_path / "tick_rate")
         .add_coerced_subscriber(boost::bind(&b200_impl::update_tx_dsp_tick_rate, this, _1, perif.duc, tx_dsp_path))
     ;
+
+    // More added code. JTL
+
+    _tree->create<uint32_t>(rx_dsp_path / "cmd_rx")
+      .add_coerced_subscriber(boost::bind(&set_cmd_rx, perif.ctrl, _1));
+      //.set(0x00);
+
+    _tree->create<uint32_t>(rx_dsp_path / "time_h_rx")
+      .add_coerced_subscriber(boost::bind(&set_time_h_rx, perif.ctrl, _1));
+      //.set(0x00);
+
+    _tree->create<uint32_t>(rx_dsp_path / "time_l_rx")
+      .add_coerced_subscriber(boost::bind(&set_time_l_rx, perif.ctrl, _1));
+      //.set(0x00);
+
+    _tree->create<uint32_t>(rx_dsp_path / "cntrl")
+      .add_coerced_subscriber(boost::bind(&set_cntrl, perif.ctrl, _1))
+      .set(0x00);
+
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg0")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg0, perif.ctrl, _1))
+      .set(0x00);
+
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg1")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg1, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg2")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg2, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg3")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg3, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg4")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg4, perif.ctrl, _1))
+      .set(0x00);
+
+	_tree->access<uint32_t>(rx_dsp_path / "llr_reg0").set(788597948);
+	_tree->access<uint32_t>(rx_dsp_path / "llr_reg0").set(1971494872);
+    // End JTL added code.
 
     ////////////////////////////////////////////////////////////////////
     // create RF frontend interfacing

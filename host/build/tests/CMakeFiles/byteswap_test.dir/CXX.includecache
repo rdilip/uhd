@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/uhd/config.hpp
+boost/config.hpp
+-
+ciso646
+-
+cstddef
+-
+
+../include/uhd/utils/byteswap.hpp
+uhd/config.hpp
+-
+stdint.h
+-
+uhd/utils/byteswap.ipp
+-
+
+../include/uhd/utils/byteswap.ipp
+cstdlib
+-
+libkern/OSByteOrder.h
+-
+byteswap.h
+-
+boost/detail/endian.hpp
+-
+
+/home/thompsonlab/Documents/uhd/host/tests/byteswap_test.cpp
+boost/test/unit_test.hpp
+-
+uhd/utils/byteswap.hpp
+-
+

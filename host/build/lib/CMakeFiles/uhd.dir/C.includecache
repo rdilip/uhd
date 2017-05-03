@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thompsonlab/Documents/uhd/host/lib/usrp/x300/cdecode.c
+cdecode.h
+/home/thompsonlab/Documents/uhd/host/lib/usrp/x300/cdecode.h
+
+/home/thompsonlab/Documents/uhd/host/lib/usrp/x300/cdecode.h
+stddef.h
+-
+
