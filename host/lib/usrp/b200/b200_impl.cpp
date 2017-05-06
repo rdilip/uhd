@@ -2,9 +2,7 @@
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
+// the Free Software Foundation, either version 3 of the License, or // (at your option) any later version.  //
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -902,7 +900,10 @@ void b200_impl::setup_radio(const size_t dspno)
       .set(0x00);
 
 	int i;
-	double j;
+	double fq, am, ph;
+	uint16_t fq0;
+	uint8_t am0, ph0;
+	uint32_t comb_fq_am_ph;
 	std::string file_spec;
 	std::ifstream inFile("/home/thompsonlab/Documents/uhd/host/lib/usrp/b200/freq.txt");
 	
@@ -911,16 +912,34 @@ void b200_impl::setup_radio(const size_t dspno)
 	}
 	
 	while (!inFile.eof()) {
-		inFile >> i >> j;
+		inFile >> i >> fq >> am >> ph;
 		std::string id = std::to_string(i);
 		std::string file_start = "llr_reg";
 		file_spec = file_start + id;
 		if (i == -1) {
 			break;
 		} else {
-		j = (int)((j / 32.768)*(std::pow(2,32)));
-		UHD_LOGGER_INFO("B200") << "Rohit file detected: " << file_spec << " " << j;
-		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(j);
+		// NOTE: 32.768 is hardcoded clock speed in MHz. 16 is the
+		// length of phase accumulators. If you mess with these, you 
+		// NEED TO CHANGE THESE ON THE FPGA SIDE. 
+		fq0 = (uint16_t)((fq / 61)*(std::pow(2,16)));
+		// Below could be 255 (8 bits), but let's be safe. 
+		if (!(am < 1.0 && am > 0.0)) {
+			UHD_LOGGER_INFO("B200") << "Amplitudes must be between 0 and 1:" << i;
+		}
+		if (!(ph < 6.28 && ph > 0.0)) {
+			UHD_LOGGER_INFO("B200") << "Phases must be between 0 and 2 pi:" << i;
+		}
+
+		am0 = (uint8_t)(am * 254);
+		ph0 = (uint8_t)(ph * 254 / 6.28);
+		UHD_LOGGER_INFO("B200") << "Rohit file detected: " << file_spec << " " << fq;
+
+		// Concatenating bits together.
+		comb_fq_am_ph = ph0;
+		comb_fq_am_ph = (comb_fq_am_ph << 8) | am0;
+		comb_fq_am_ph = (comb_fq_am_ph << 16) | fq0;
+		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(comb_fq_am_ph);
 		}
 	}
 
