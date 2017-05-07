@@ -922,7 +922,7 @@ void b200_impl::setup_radio(const size_t dspno)
 		// NOTE: 32.768 is hardcoded clock speed in MHz. 16 is the
 		// length of phase accumulators. If you mess with these, you 
 		// NEED TO CHANGE THESE ON THE FPGA SIDE. 
-		fq0 = (uint16_t)((fq / 61)*(std::pow(2,16)));
+		fq0 = (uint16_t)((fq / 32.768)*(std::pow(2,16)));
 		// Below could be 255 (8 bits), but let's be safe. 
 		if (!(am < 1.0 && am > 0.0)) {
 			UHD_LOGGER_INFO("B200") << "Amplitudes must be between 0 and 1:" << i;
