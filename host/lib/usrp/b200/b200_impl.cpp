@@ -766,6 +766,32 @@ static void set_llr_reg4(radio_ctrl_core_3000::sptr iface, const uint32_t val)
 {
   iface->poke32(TOREG(SR_LLR_REG4), val);
 }
+static void set_llr_reg5(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG5), val);
+}
+static void set_llr_reg6(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG6), val);
+}
+static void set_llr_reg7(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG7), val);
+}
+static void set_llr_reg8(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG8), val);
+}
+static void set_llr_reg9(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG9), val);
+}
+static void set_llr_reg10(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG10), val);
+}
+
+
 // Ending code added by JTL.
 
 
@@ -885,7 +911,6 @@ void b200_impl::setup_radio(const size_t dspno)
     _tree->create<uint32_t>(rx_dsp_path / "llr_reg0")
       .add_coerced_subscriber(boost::bind(&set_llr_reg0, perif.ctrl, _1))
       .set(0x00);
-
     _tree->create<uint32_t>(rx_dsp_path / "llr_reg1")
       .add_coerced_subscriber(boost::bind(&set_llr_reg1, perif.ctrl, _1))
       .set(0x00);
@@ -898,6 +923,26 @@ void b200_impl::setup_radio(const size_t dspno)
     _tree->create<uint32_t>(rx_dsp_path / "llr_reg4")
       .add_coerced_subscriber(boost::bind(&set_llr_reg4, perif.ctrl, _1))
       .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg5")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg5, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg6")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg6, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg7")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg7, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg8")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg8, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg9")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg9, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "llr_reg10")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg10, perif.ctrl, _1))
+      .set(0x00);
+
+
 
 	int i;
 	double fq, am, ph;
