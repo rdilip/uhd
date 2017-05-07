@@ -61,7 +61,17 @@ localparam SR_LLR_REG6    = 170;//sr_llr_reg6
 localparam SR_LLR_REG7    = 171;//sr_llr_reg7
 localparam SR_LLR_REG8    = 172;//sr_llr_reg8
 localparam SR_LLR_REG9    = 173;//sr_llr_reg9
-localparam SR_LLR_REG10    = 174;//sr_llr_reg10
+localparam SR_LLR_REG10   = 174;//sr_llr_reg10
+localparam SR_LLR_REG11	  = 175;// You can guess the rest...
+localparam SR_LLR_REG12	  = 176;
+localparam SR_LLR_REG13	  = 177;
+localparam SR_LLR_REG14	  = 178;
+localparam SR_LLR_REG15	  = 179;
+localparam SR_LLR_REG16	  = 180;
+localparam SR_LLR_REG17	  = 181;
+localparam SR_LLR_REG18	  = 182;
+localparam SR_LLR_REG19	  = 183;
+
 
 
 // JTL end
