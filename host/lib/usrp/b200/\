@@ -1030,10 +1030,10 @@ void b200_impl::setup_radio(const size_t dspno)
 		// NEED TO CHANGE THESE ON THE FPGA SIDE. 
 		fq0 = (uint16_t)((fq / 32.768)*(std::pow(2,16)));
 		// Below could be 255 (8 bits), but let's be safe. 
-		if (!(am <= 1.0 && am >= 0.0)) {
+		if (!(am < 1.0 && am > 0.0)) {
 			UHD_LOGGER_INFO("B200") << "Amplitudes must be between 0 and 1:" << i;
 		}
-		if (!(ph <= 6.28 && ph >= 0.0)) {
+		if (!(ph < 6.28 && ph > 0.0)) {
 			UHD_LOGGER_INFO("B200") << "Phases must be between 0 and 2 pi:" << i;
 		}
 
@@ -1045,10 +1045,6 @@ void b200_impl::setup_radio(const size_t dspno)
 		comb_fq_am_ph = ph0;
 		comb_fq_am_ph = (comb_fq_am_ph << 8) | am0;
 		comb_fq_am_ph = (comb_fq_am_ph << 16) | fq0;
-
-		UHD_LOGGER_INFO("B200") << "Rohit file detected: " << file_spec << " " <<  ph;
-		UHD_LOGGER_INFO("B200") << "Rohit file detected: " << file_spec << " " << comb_fq_am_ph;
-
 		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(comb_fq_am_ph);
 		}
 	}
