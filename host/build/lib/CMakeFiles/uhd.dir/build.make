@@ -165,11 +165,15 @@ lib/rfnoc/nocscript/basic_functions.hpp: ../lib/rfnoc/nocscript/gen_basic_funcs.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/rfnoc/nocscript/basic_functions.hpp"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/python -B /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/gen_basic_funcs.py /home/thompsonlab/Documents/uhd/host/build/lib/rfnoc/nocscript/basic_functions.hpp
 
+docs/nocscript_functions.dox: ../lib/rfnoc/nocscript/gen_basic_funcs.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating /home/thompsonlab/Documents/uhd/host/build/docs/nocscript_functions.dox"
+	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/python -B /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/gen_basic_funcs.py /home/thompsonlab/Documents/uhd/host/build/docs/nocscript_functions.dox
+
 lib/transport/nirio/lvbitx/x300_lvbitx.cpp: ../lib/transport/nirio/lvbitx/process-lvbitx.py
 lib/transport/nirio/lvbitx/x300_lvbitx.cpp: ../lib/transport/nirio/lvbitx/template_lvbitx.hpp
 lib/transport/nirio/lvbitx/x300_lvbitx.cpp: ../lib/transport/nirio/lvbitx/template_lvbitx.cpp
 lib/transport/nirio/lvbitx/x300_lvbitx.cpp: ../lib/transport/nirio/lvbitx/x300.lvbitx_base
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x300_lvbitx.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x300_lvbitx.cpp"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/python /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/lvbitx/process-lvbitx.py --output-src-path=/home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx --uhd-images-path=OFF /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/lvbitx/x300.lvbitx_base
 
 lib/transport/nirio/lvbitx/x300_lvbitx.hpp: lib/transport/nirio/lvbitx/x300_lvbitx.cpp
@@ -179,19 +183,19 @@ lib/transport/nirio/lvbitx/x310_lvbitx.cpp: ../lib/transport/nirio/lvbitx/proces
 lib/transport/nirio/lvbitx/x310_lvbitx.cpp: ../lib/transport/nirio/lvbitx/template_lvbitx.hpp
 lib/transport/nirio/lvbitx/x310_lvbitx.cpp: ../lib/transport/nirio/lvbitx/template_lvbitx.cpp
 lib/transport/nirio/lvbitx/x310_lvbitx.cpp: ../lib/transport/nirio/lvbitx/x310.lvbitx_base
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x310_lvbitx.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x310_lvbitx.cpp"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/python /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/lvbitx/process-lvbitx.py --output-src-path=/home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx --uhd-images-path=OFF /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/lvbitx/x310.lvbitx_base
 
 lib/transport/nirio/lvbitx/x310_lvbitx.hpp: lib/transport/nirio/lvbitx/x310_lvbitx.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/transport/nirio/lvbitx/x310_lvbitx.hpp
 
 lib/transport/vrt_if_packet.cpp: ../lib/transport/gen_vrt_if_packet.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/vrt_if_packet.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating /home/thompsonlab/Documents/uhd/host/build/lib/transport/vrt_if_packet.cpp"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/python -B /home/thompsonlab/Documents/uhd/host/lib/transport/gen_vrt_if_packet.py /home/thompsonlab/Documents/uhd/host/build/lib/transport/vrt_if_packet.cpp
 
 lib/CMakeFiles/uhd.dir/types/device_addr.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/device_addr.cpp.o: ../lib/types/device_addr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object lib/CMakeFiles/uhd.dir/types/device_addr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/CMakeFiles/uhd.dir/types/device_addr.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/device_addr.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/device_addr.cpp
 
 lib/CMakeFiles/uhd.dir/types/device_addr.cpp.i: cmake_force
@@ -215,7 +219,7 @@ lib/CMakeFiles/uhd.dir/types/device_addr.cpp.o.provides.build: lib/CMakeFiles/uh
 
 lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.o: ../lib/types/mac_addr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/mac_addr.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/mac_addr.cpp
 
 lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.i: cmake_force
@@ -239,7 +243,7 @@ lib/CMakeFiles/uhd.dir/types/mac_addr.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/types/metadata.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/metadata.cpp.o: ../lib/types/metadata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/CMakeFiles/uhd.dir/types/metadata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/CMakeFiles/uhd.dir/types/metadata.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/metadata.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/metadata.cpp
 
 lib/CMakeFiles/uhd.dir/types/metadata.cpp.i: cmake_force
@@ -263,7 +267,7 @@ lib/CMakeFiles/uhd.dir/types/metadata.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/types/ranges.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/ranges.cpp.o: ../lib/types/ranges.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/CMakeFiles/uhd.dir/types/ranges.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/CMakeFiles/uhd.dir/types/ranges.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/ranges.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/ranges.cpp
 
 lib/CMakeFiles/uhd.dir/types/ranges.cpp.i: cmake_force
@@ -287,7 +291,7 @@ lib/CMakeFiles/uhd.dir/types/ranges.cpp.o.provides.build: lib/CMakeFiles/uhd.dir
 
 lib/CMakeFiles/uhd.dir/types/sensors.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/sensors.cpp.o: ../lib/types/sensors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/CMakeFiles/uhd.dir/types/sensors.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/CMakeFiles/uhd.dir/types/sensors.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/sensors.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/sensors.cpp
 
 lib/CMakeFiles/uhd.dir/types/sensors.cpp.i: cmake_force
@@ -311,7 +315,7 @@ lib/CMakeFiles/uhd.dir/types/sensors.cpp.o.provides.build: lib/CMakeFiles/uhd.di
 
 lib/CMakeFiles/uhd.dir/types/serial.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/serial.cpp.o: ../lib/types/serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/CMakeFiles/uhd.dir/types/serial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object lib/CMakeFiles/uhd.dir/types/serial.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/serial.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/serial.cpp
 
 lib/CMakeFiles/uhd.dir/types/serial.cpp.i: cmake_force
@@ -335,7 +339,7 @@ lib/CMakeFiles/uhd.dir/types/serial.cpp.o.provides.build: lib/CMakeFiles/uhd.dir
 
 lib/CMakeFiles/uhd.dir/types/sid.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/sid.cpp.o: ../lib/types/sid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object lib/CMakeFiles/uhd.dir/types/sid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object lib/CMakeFiles/uhd.dir/types/sid.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/sid.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/sid.cpp
 
 lib/CMakeFiles/uhd.dir/types/sid.cpp.i: cmake_force
@@ -359,7 +363,7 @@ lib/CMakeFiles/uhd.dir/types/sid.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/ty
 
 lib/CMakeFiles/uhd.dir/types/time_spec.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/time_spec.cpp.o: ../lib/types/time_spec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object lib/CMakeFiles/uhd.dir/types/time_spec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object lib/CMakeFiles/uhd.dir/types/time_spec.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DHAVE_CLOCK_GETTIME $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/time_spec.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/time_spec.cpp
 
 lib/CMakeFiles/uhd.dir/types/time_spec.cpp.i: cmake_force
@@ -383,7 +387,7 @@ lib/CMakeFiles/uhd.dir/types/time_spec.cpp.o.provides.build: lib/CMakeFiles/uhd.
 
 lib/CMakeFiles/uhd.dir/types/tune.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/tune.cpp.o: ../lib/types/tune.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object lib/CMakeFiles/uhd.dir/types/tune.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object lib/CMakeFiles/uhd.dir/types/tune.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/tune.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/tune.cpp
 
 lib/CMakeFiles/uhd.dir/types/tune.cpp.i: cmake_force
@@ -407,7 +411,7 @@ lib/CMakeFiles/uhd.dir/types/tune.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/t
 
 lib/CMakeFiles/uhd.dir/types/types.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/types.cpp.o: ../lib/types/types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object lib/CMakeFiles/uhd.dir/types/types.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object lib/CMakeFiles/uhd.dir/types/types.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/types.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/types.cpp
 
 lib/CMakeFiles/uhd.dir/types/types.cpp.i: cmake_force
@@ -431,7 +435,7 @@ lib/CMakeFiles/uhd.dir/types/types.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/
 
 lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.o: ../lib/types/wb_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/wb_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/wb_iface.cpp
 
 lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.i: cmake_force
@@ -455,7 +459,7 @@ lib/CMakeFiles/uhd.dir/types/wb_iface.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/types/filters.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/filters.cpp.o: ../lib/types/filters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object lib/CMakeFiles/uhd.dir/types/filters.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object lib/CMakeFiles/uhd.dir/types/filters.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/filters.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/filters.cpp
 
 lib/CMakeFiles/uhd.dir/types/filters.cpp.i: cmake_force
@@ -479,7 +483,7 @@ lib/CMakeFiles/uhd.dir/types/filters.cpp.o.provides.build: lib/CMakeFiles/uhd.di
 
 lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.o: ../lib/types/byte_vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/byte_vector.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/byte_vector.cpp
 
 lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.i: cmake_force
@@ -503,7 +507,7 @@ lib/CMakeFiles/uhd.dir/types/byte_vector.cpp.o.provides.build: lib/CMakeFiles/uh
 
 lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.o: ../lib/types/metadata_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/metadata_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/metadata_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.i: cmake_force
@@ -527,7 +531,7 @@ lib/CMakeFiles/uhd.dir/types/metadata_c.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.o: ../lib/types/ranges_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/ranges_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/ranges_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.i: cmake_force
@@ -551,7 +555,7 @@ lib/CMakeFiles/uhd.dir/types/ranges_c.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.o: ../lib/types/sensors_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/sensors_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/sensors_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.i: cmake_force
@@ -575,7 +579,7 @@ lib/CMakeFiles/uhd.dir/types/sensors_c.cpp.o.provides.build: lib/CMakeFiles/uhd.
 
 lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.o: ../lib/types/string_vector_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/string_vector_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/string_vector_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.i: cmake_force
@@ -599,7 +603,7 @@ lib/CMakeFiles/uhd.dir/types/string_vector_c.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/types/tune_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/tune_c.cpp.o: ../lib/types/tune_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object lib/CMakeFiles/uhd.dir/types/tune_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object lib/CMakeFiles/uhd.dir/types/tune_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/tune_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/tune_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/tune_c.cpp.i: cmake_force
@@ -623,7 +627,7 @@ lib/CMakeFiles/uhd.dir/types/tune_c.cpp.o.provides.build: lib/CMakeFiles/uhd.dir
 
 lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o: ../lib/types/usrp_info_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/types/usrp_info_c.cpp
 
 lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.i: cmake_force
@@ -647,7 +651,7 @@ lib/CMakeFiles/uhd.dir/types/usrp_info_c.cpp.o.provides.build: lib/CMakeFiles/uh
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o: ../lib/convert/sse2_sc16_to_sc16.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_sc16_to_sc16.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.i: cmake_force
@@ -671,7 +675,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_sc16.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o: ../lib/convert/sse2_sc16_to_fc64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_sc16_to_fc64.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.i: cmake_force
@@ -695,7 +699,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc64.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o: ../lib/convert/sse2_sc16_to_fc32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_sc16_to_fc32.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.i: cmake_force
@@ -719,7 +723,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_sc16_to_fc32.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o: ../lib/convert/sse2_sc8_to_fc64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_sc8_to_fc64.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.i: cmake_force
@@ -743,7 +747,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc64.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o: ../lib/convert/sse2_sc8_to_fc32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_sc8_to_fc32.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.i: cmake_force
@@ -767,7 +771,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_sc8_to_fc32.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o: ../lib/convert/sse2_fc64_to_sc16.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_fc64_to_sc16.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.i: cmake_force
@@ -791,7 +795,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc16.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o: ../lib/convert/sse2_fc32_to_sc16.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_fc32_to_sc16.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.i: cmake_force
@@ -815,7 +819,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc16.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o: ../lib/convert/sse2_fc64_to_sc8.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_fc64_to_sc8.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.i: cmake_force
@@ -839,7 +843,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_fc64_to_sc8.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o: ../lib/convert/sse2_fc32_to_sc8.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -msse2 -o CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/sse2_fc32_to_sc8.cpp
 
 lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.i: cmake_force
@@ -863,7 +867,7 @@ lib/CMakeFiles/uhd.dir/convert/sse2_fc32_to_sc8.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.o: lib/convert/convert_general.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_general.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/convert/convert_general.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.i: cmake_force
@@ -887,7 +891,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_general.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o: ../lib/convert/convert_with_tables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_with_tables.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.i: cmake_force
@@ -911,7 +915,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_with_tables.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.o: ../lib/convert/convert_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_impl.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.i: cmake_force
@@ -935,7 +939,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_impl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.o: ../lib/convert/convert_item32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_item32.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_item32.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.i: cmake_force
@@ -959,7 +963,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_item32.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o: ../lib/convert/convert_pack_sc12.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_pack_sc12.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.i: cmake_force
@@ -983,7 +987,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_pack_sc12.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o: ../lib/convert/convert_unpack_sc12.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_unpack_sc12.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.i: cmake_force
@@ -1007,7 +1011,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_unpack_sc12.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o: ../lib/convert/convert_fc32_item32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/convert/convert_fc32_item32.cpp
 
 lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.i: cmake_force
@@ -1031,7 +1035,7 @@ lib/CMakeFiles/uhd.dir/convert/convert_fc32_item32.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o: ../lib/rfnoc/block_ctrl_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/block_ctrl_base.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.i: cmake_force
@@ -1055,7 +1059,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o: ../lib/rfnoc/block_ctrl_base_factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/block_ctrl_base_factory.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.i: cmake_force
@@ -1079,7 +1083,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_base_factory.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o: ../lib/rfnoc/block_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/block_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.i: cmake_force
@@ -1103,7 +1107,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/block_ctrl_impl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o: ../lib/rfnoc/blockdef_xml_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/blockdef_xml_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.i: cmake_force
@@ -1127,7 +1131,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/blockdef_xml_impl.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o: ../lib/rfnoc/block_id.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/block_id.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.i: cmake_force
@@ -1151,7 +1155,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/block_id.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o: ../lib/rfnoc/ctrl_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/ctrl_iface.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.i: cmake_force
@@ -1175,7 +1179,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/ctrl_iface.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o: ../lib/rfnoc/graph_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/graph_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.i: cmake_force
@@ -1199,7 +1203,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/graph_impl.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o: ../lib/rfnoc/legacy_compat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/legacy_compat.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.i: cmake_force
@@ -1223,7 +1227,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/legacy_compat.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o: ../lib/rfnoc/node_ctrl_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/node_ctrl_base.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.i: cmake_force
@@ -1247,7 +1251,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/node_ctrl_base.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o: ../lib/rfnoc/rate_node_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/rate_node_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.i: cmake_force
@@ -1271,7 +1275,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/rate_node_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o: ../lib/rfnoc/rx_stream_terminator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/rx_stream_terminator.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.i: cmake_force
@@ -1295,7 +1299,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/rx_stream_terminator.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o: ../lib/rfnoc/scalar_node_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/scalar_node_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.i: cmake_force
@@ -1319,7 +1323,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/scalar_node_ctrl.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o: ../lib/rfnoc/sink_block_ctrl_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/sink_block_ctrl_base.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.i: cmake_force
@@ -1343,7 +1347,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/sink_block_ctrl_base.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o: ../lib/rfnoc/sink_node_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/sink_node_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.i: cmake_force
@@ -1367,7 +1371,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/sink_node_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o: ../lib/rfnoc/source_block_ctrl_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/source_block_ctrl_base.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.i: cmake_force
@@ -1391,7 +1395,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/source_block_ctrl_base.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o: ../lib/rfnoc/source_node_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/source_node_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.i: cmake_force
@@ -1415,7 +1419,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/source_node_ctrl.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o: ../lib/rfnoc/stream_sig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/stream_sig.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.i: cmake_force
@@ -1439,7 +1443,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/stream_sig.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o: ../lib/rfnoc/tick_node_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/tick_node_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.i: cmake_force
@@ -1463,7 +1467,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/tick_node_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o: ../lib/rfnoc/tx_stream_terminator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/tx_stream_terminator.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.i: cmake_force
@@ -1487,7 +1491,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/tx_stream_terminator.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o: ../lib/rfnoc/wb_iface_adapter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/wb_iface_adapter.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.i: cmake_force
@@ -1511,7 +1515,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/wb_iface_adapter.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o: ../lib/rfnoc/ddc_block_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/ddc_block_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.i: cmake_force
@@ -1535,7 +1539,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/ddc_block_ctrl_impl.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o: ../lib/rfnoc/duc_block_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/duc_block_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.i: cmake_force
@@ -1559,7 +1563,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/duc_block_ctrl_impl.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o: ../lib/rfnoc/radio_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/radio_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.i: cmake_force
@@ -1583,7 +1587,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/radio_ctrl_impl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o: ../lib/rfnoc/dma_fifo_block_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/dma_fifo_block_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.i: cmake_force
@@ -1607,7 +1611,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/dma_fifo_block_ctrl_impl.cpp.o.provides.build: lib/
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o: ../lib/rfnoc/nocscript/expression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/expression.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.i: cmake_force
@@ -1631,7 +1635,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/nocscript/expression.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o: ../lib/rfnoc/nocscript/function_table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/function_table.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.i: cmake_force
@@ -1655,7 +1659,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/nocscript/function_table.cpp.o.provides.build: lib/
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o: ../lib/rfnoc/nocscript/parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/parser.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.i: cmake_force
@@ -1679,7 +1683,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/nocscript/parser.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o: ../lib/rfnoc/nocscript/block_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/rfnoc/nocscript/block_iface.cpp
 
 lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.i: cmake_force
@@ -1703,7 +1707,7 @@ lib/CMakeFiles/uhd.dir/rfnoc/nocscript/block_iface.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o: ../lib/cal/power_container_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/cal/power_container_impl.cpp
 
 lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.i: cmake_force
@@ -1727,7 +1731,7 @@ lib/CMakeFiles/uhd.dir/cal/power_container_impl.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o: ../lib/usrp/dboard_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_base.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.i: cmake_force
@@ -1751,7 +1755,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_base.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o: ../lib/usrp/dboard_eeprom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_eeprom.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.i: cmake_force
@@ -1775,7 +1779,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o: ../lib/usrp/dboard_id.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_id.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.i: cmake_force
@@ -1799,7 +1803,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_id.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o: ../lib/usrp/dboard_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.i: cmake_force
@@ -1823,7 +1827,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_iface.cpp.o.provides.build: lib/CMakeFiles/uh
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o: ../lib/usrp/dboard_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_manager.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.i: cmake_force
@@ -1847,7 +1851,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_manager.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o: ../lib/usrp/gps_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/gps_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.i: cmake_force
@@ -1871,7 +1875,7 @@ lib/CMakeFiles/uhd.dir/usrp/gps_ctrl.cpp.o.provides.build: lib/CMakeFiles/uhd.di
 
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o: ../lib/usrp/mboard_eeprom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/mboard_eeprom.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.i: cmake_force
@@ -1895,7 +1899,7 @@ lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o: ../lib/usrp/multi_usrp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/multi_usrp.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.i: cmake_force
@@ -1919,7 +1923,7 @@ lib/CMakeFiles/uhd.dir/usrp/multi_usrp.cpp.o.provides.build: lib/CMakeFiles/uhd.
 
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o: ../lib/usrp/subdev_spec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/subdev_spec.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.i: cmake_force
@@ -1943,7 +1947,7 @@ lib/CMakeFiles/uhd.dir/usrp/subdev_spec.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o: ../lib/usrp/fe_connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/fe_connection.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.i: cmake_force
@@ -1967,7 +1971,7 @@ lib/CMakeFiles/uhd.dir/usrp/fe_connection.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o: ../lib/usrp/dboard_eeprom_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard_eeprom_c.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.i: cmake_force
@@ -1991,7 +1995,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard_eeprom_c.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o: ../lib/usrp/mboard_eeprom_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/mboard_eeprom_c.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.i: cmake_force
@@ -2015,7 +2019,7 @@ lib/CMakeFiles/uhd.dir/usrp/mboard_eeprom_c.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o: ../lib/usrp/subdev_spec_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/subdev_spec_c.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.i: cmake_force
@@ -2039,7 +2043,7 @@ lib/CMakeFiles/uhd.dir/usrp/subdev_spec_c.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o: ../lib/usrp/usrp_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp_c.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.i: cmake_force
@@ -2063,7 +2067,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp_c.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/
 
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o: ../lib/usrp/cores/gpio_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/gpio_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.i: cmake_force
@@ -2087,7 +2091,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/gpio_core_200.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o: ../lib/usrp/cores/i2c_core_100.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/i2c_core_100.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.i: cmake_force
@@ -2111,7 +2115,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o: ../lib/usrp/cores/i2c_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/i2c_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.i: cmake_force
@@ -2135,7 +2139,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_200.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o: ../lib/usrp/cores/spi_core_100.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/spi_core_100.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.i: cmake_force
@@ -2159,7 +2163,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_100.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o: ../lib/usrp/cores/time64_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/time64_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.i: cmake_force
@@ -2183,7 +2187,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/time64_core_200.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o: ../lib/usrp/cores/rx_dsp_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/rx_dsp_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.i: cmake_force
@@ -2207,7 +2211,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_200.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o: ../lib/usrp/cores/tx_dsp_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/tx_dsp_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.i: cmake_force
@@ -2231,7 +2235,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_200.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o: ../lib/usrp/cores/rx_frontend_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/rx_frontend_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.i: cmake_force
@@ -2255,7 +2259,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_200.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o: ../lib/usrp/cores/rx_frontend_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/rx_frontend_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.i: cmake_force
@@ -2279,7 +2283,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/rx_frontend_core_3000.cpp.o.provides.build: li
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o: ../lib/usrp/cores/tx_frontend_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/tx_frontend_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.i: cmake_force
@@ -2303,7 +2307,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/tx_frontend_core_200.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o: ../lib/usrp/cores/user_settings_core_200.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/user_settings_core_200.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.i: cmake_force
@@ -2327,7 +2331,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_200.cpp.o.provides.build: l
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o: ../lib/usrp/cores/rx_vita_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/rx_vita_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.i: cmake_force
@@ -2351,7 +2355,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/rx_vita_core_3000.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o: ../lib/usrp/cores/tx_vita_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/tx_vita_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.i: cmake_force
@@ -2375,7 +2379,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/tx_vita_core_3000.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o: ../lib/usrp/cores/time_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/time_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.i: cmake_force
@@ -2399,7 +2403,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/time_core_3000.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o: ../lib/usrp/cores/spi_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/spi_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.i: cmake_force
@@ -2423,7 +2427,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/spi_core_3000.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o: ../lib/usrp/cores/i2c_core_100_wb32.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/i2c_core_100_wb32.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.i: cmake_force
@@ -2447,7 +2451,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/i2c_core_100_wb32.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o: ../lib/usrp/cores/dsp_core_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/dsp_core_utils.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.i: cmake_force
@@ -2471,7 +2475,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/dsp_core_utils.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o: ../lib/usrp/cores/rx_dsp_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/rx_dsp_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.i: cmake_force
@@ -2495,7 +2499,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/rx_dsp_core_3000.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o: ../lib/usrp/cores/tx_dsp_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/tx_dsp_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.i: cmake_force
@@ -2519,7 +2523,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/tx_dsp_core_3000.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o: ../lib/usrp/cores/radio_ctrl_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/radio_ctrl_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.i: cmake_force
@@ -2543,7 +2547,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/radio_ctrl_core_3000.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o: ../lib/usrp/cores/gpio_atr_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/gpio_atr_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.i: cmake_force
@@ -2567,7 +2571,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/gpio_atr_3000.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o: ../lib/usrp/cores/dma_fifo_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/dma_fifo_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.i: cmake_force
@@ -2591,7 +2595,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/dma_fifo_core_3000.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o: ../lib/usrp/cores/user_settings_core_3000.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/cores/user_settings_core_3000.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.i: cmake_force
@@ -2615,7 +2619,7 @@ lib/CMakeFiles/uhd.dir/usrp/cores/user_settings_core_3000.cpp.o.provides.build: 
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o: ../lib/usrp/dboard/db_basic_and_lf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_basic_and_lf.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.i: cmake_force
@@ -2639,7 +2643,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_basic_and_lf.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o: ../lib/usrp/dboard/db_rfx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_rfx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.i: cmake_force
@@ -2663,7 +2667,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_rfx.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o: ../lib/usrp/dboard/db_xcvr2450.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_xcvr2450.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.i: cmake_force
@@ -2687,7 +2691,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_xcvr2450.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o: ../lib/usrp/dboard/db_sbx_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_sbx_common.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.i: cmake_force
@@ -2711,7 +2715,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_common.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o: ../lib/usrp/dboard/db_sbx_version3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_sbx_version3.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.i: cmake_force
@@ -2735,7 +2739,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version3.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o: ../lib/usrp/dboard/db_sbx_version4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_sbx_version4.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.i: cmake_force
@@ -2759,7 +2763,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_sbx_version4.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o: ../lib/usrp/dboard/db_cbx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_cbx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.i: cmake_force
@@ -2783,7 +2787,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_cbx.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o: ../lib/usrp/dboard/db_ubx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_ubx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.i: cmake_force
@@ -2807,7 +2811,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_ubx.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o: ../lib/usrp/dboard/db_wbx_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_wbx_common.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.i: cmake_force
@@ -2831,7 +2835,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_common.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o: ../lib/usrp/dboard/db_wbx_version2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_wbx_version2.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.i: cmake_force
@@ -2855,7 +2859,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version2.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o: ../lib/usrp/dboard/db_wbx_version3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_wbx_version3.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.i: cmake_force
@@ -2879,7 +2883,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version3.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o: ../lib/usrp/dboard/db_wbx_version4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_wbx_version4.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.i: cmake_force
@@ -2903,7 +2907,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_version4.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o: ../lib/usrp/dboard/db_wbx_simple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_wbx_simple.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.i: cmake_force
@@ -2927,7 +2931,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_wbx_simple.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o: ../lib/usrp/dboard/db_dbsrx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_dbsrx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.i: cmake_force
@@ -2951,7 +2955,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o: ../lib/usrp/dboard/db_unknown.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_unknown.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.i: cmake_force
@@ -2975,7 +2979,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_unknown.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o: ../lib/usrp/dboard/db_tvrx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_tvrx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.i: cmake_force
@@ -2999,7 +3003,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o: ../lib/usrp/dboard/db_dbsrx2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_dbsrx2.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.i: cmake_force
@@ -3023,7 +3027,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_dbsrx2.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o: ../lib/usrp/dboard/db_tvrx2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_tvrx2.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.i: cmake_force
@@ -3047,7 +3051,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_tvrx2.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o: ../lib/usrp/dboard/db_e3x0.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_e3x0.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.i: cmake_force
@@ -3071,7 +3075,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_e3x0.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o: ../lib/usrp/dboard/twinrx/twinrx_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/twinrx/twinrx_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.i: cmake_force
@@ -3095,7 +3099,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_ctrl.cpp.o.provides.build: lib/
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o: ../lib/usrp/dboard/twinrx/twinrx_experts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/twinrx/twinrx_experts.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.i: cmake_force
@@ -3119,7 +3123,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_experts.cpp.o.provides.build: l
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o: ../lib/usrp/dboard/twinrx/twinrx_gain_tables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/twinrx/twinrx_gain_tables.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.i: cmake_force
@@ -3143,7 +3147,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/twinrx/twinrx_gain_tables.cpp.o.provides.buil
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o: ../lib/usrp/dboard/db_twinrx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/dboard/db_twinrx.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.i: cmake_force
@@ -3167,7 +3171,7 @@ lib/CMakeFiles/uhd.dir/usrp/dboard/db_twinrx.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o: ../lib/usrp/common/fx2_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/fx2_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.i: cmake_force
@@ -3191,7 +3195,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/fx2_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o: ../lib/usrp/common/adf4001_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/adf4001_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.i: cmake_force
@@ -3215,7 +3219,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/adf4001_ctrl.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o: ../lib/usrp/common/adf435x.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/adf435x.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.i: cmake_force
@@ -3239,7 +3243,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/adf435x.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o: ../lib/usrp/common/adf5355.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/adf5355.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.i: cmake_force
@@ -3263,7 +3267,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/adf5355.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o: ../lib/usrp/common/ad9361_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/ad9361_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.i: cmake_force
@@ -3287,7 +3291,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/ad9361_ctrl.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o: ../lib/usrp/common/ad936x_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/ad936x_manager.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.i: cmake_force
@@ -3311,7 +3315,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/ad936x_manager.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o: ../lib/usrp/common/ad9361_driver/ad9361_device.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/ad9361_driver/ad9361_device.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.i: cmake_force
@@ -3335,7 +3339,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/ad9361_driver/ad9361_device.cpp.o.provides.bu
 
 lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o: ../lib/usrp/common/apply_corrections.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/apply_corrections.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.i: cmake_force
@@ -3359,7 +3363,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/apply_corrections.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o: ../lib/usrp/common/validate_subdev_spec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/validate_subdev_spec.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.i: cmake_force
@@ -3383,7 +3387,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/validate_subdev_spec.cpp.o.provides.build: li
 
 lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o: ../lib/usrp/common/recv_packet_demuxer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/recv_packet_demuxer.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.i: cmake_force
@@ -3407,7 +3411,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/recv_packet_demuxer.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o: ../lib/usrp/common/fifo_ctrl_excelsior.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/common/fifo_ctrl_excelsior.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.i: cmake_force
@@ -3431,7 +3435,7 @@ lib/CMakeFiles/uhd.dir/usrp/common/fifo_ctrl_excelsior.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o: ../lib/usrp/device3/device3_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/device3/device3_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.i: cmake_force
@@ -3455,7 +3459,7 @@ lib/CMakeFiles/uhd.dir/usrp/device3/device3_impl.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o: ../lib/usrp/device3/device3_io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/device3/device3_io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.i: cmake_force
@@ -3479,7 +3483,7 @@ lib/CMakeFiles/uhd.dir/usrp/device3/device3_io_impl.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o: ../lib/usrp/usrp1/codec_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/codec_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.i: cmake_force
@@ -3503,7 +3507,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/codec_ctrl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o: ../lib/usrp/usrp1/dboard_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/dboard_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.i: cmake_force
@@ -3527,7 +3531,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/dboard_iface.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o: ../lib/usrp/usrp1/io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.i: cmake_force
@@ -3551,7 +3555,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/io_impl.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o: ../lib/usrp/usrp1/soft_time_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/soft_time_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.i: cmake_force
@@ -3575,7 +3579,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/soft_time_ctrl.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o: ../lib/usrp/usrp1/usrp1_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/usrp1_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.i: cmake_force
@@ -3599,7 +3603,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_iface.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o: ../lib/usrp/usrp1/usrp1_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp1/usrp1_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.i: cmake_force
@@ -3623,7 +3627,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp1/usrp1_impl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o: ../lib/usrp/usrp2/clock_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/clock_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.i: cmake_force
@@ -3647,7 +3651,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/clock_ctrl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o: ../lib/usrp/usrp2/codec_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/codec_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.i: cmake_force
@@ -3671,7 +3675,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/codec_ctrl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o: ../lib/usrp/usrp2/dboard_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/dboard_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.i: cmake_force
@@ -3695,7 +3699,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/dboard_iface.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o: ../lib/usrp/usrp2/io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.i: cmake_force
@@ -3719,7 +3723,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/io_impl.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o: ../lib/usrp/usrp2/usrp2_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/usrp2_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.i: cmake_force
@@ -3743,7 +3747,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_iface.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o: ../lib/usrp/usrp2/usrp2_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/usrp2_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.i: cmake_force
@@ -3767,7 +3771,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_impl.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o: ../lib/usrp/usrp2/usrp2_fifo_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/usrp2_fifo_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.i: cmake_force
@@ -3791,7 +3795,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/usrp2_fifo_ctrl.cpp.o.provides.build: lib/CMak
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o: ../lib/usrp/usrp2/n200_image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/usrp2/n200_image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.i: cmake_force
@@ -3815,7 +3819,7 @@ lib/CMakeFiles/uhd.dir/usrp/usrp2/n200_image_loader.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o: ../lib/usrp/b100/b100_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/b100_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.i: cmake_force
@@ -3839,7 +3843,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/b100_impl.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o: ../lib/usrp/b100/clock_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/clock_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.i: cmake_force
@@ -3863,7 +3867,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/clock_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o: ../lib/usrp/b100/codec_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/codec_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.i: cmake_force
@@ -3887,7 +3891,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/codec_ctrl.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o: ../lib/usrp/b100/dboard_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/dboard_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.i: cmake_force
@@ -3911,7 +3915,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/dboard_iface.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o: ../lib/usrp/b100/io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.i: cmake_force
@@ -3935,7 +3939,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/io_impl.cpp.o.provides.build: lib/CMakeFiles/uh
 
 lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o: ../lib/usrp/b100/usb_zero_copy_wrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b100/usb_zero_copy_wrapper.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.i: cmake_force
@@ -3959,7 +3963,7 @@ lib/CMakeFiles/uhd.dir/usrp/b100/usb_zero_copy_wrapper.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o: ../lib/usrp/x300/x300_radio_ctrl_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_radio_ctrl_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.i: cmake_force
@@ -3983,7 +3987,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_radio_ctrl_impl.cpp.o.provides.build: lib/
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o: ../lib/usrp/x300/x300_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.i: cmake_force
@@ -4007,7 +4011,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_impl.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o: ../lib/usrp/x300/x300_fw_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_fw_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.i: cmake_force
@@ -4031,7 +4035,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_ctrl.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o: ../lib/usrp/x300/x300_fw_uart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_fw_uart.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.i: cmake_force
@@ -4055,7 +4059,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_fw_uart.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o: ../lib/usrp/x300/x300_adc_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_187) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_adc_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.i: cmake_force
@@ -4079,7 +4083,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_adc_ctrl.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o: ../lib/usrp/x300/x300_dac_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_188) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_dac_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.i: cmake_force
@@ -4103,7 +4107,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_dac_ctrl.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o: ../lib/usrp/x300/x300_io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_189) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.i: cmake_force
@@ -4127,7 +4131,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_io_impl.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o: ../lib/usrp/x300/x300_dboard_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_190) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_dboard_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.i: cmake_force
@@ -4151,7 +4155,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_dboard_iface.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o: ../lib/usrp/x300/x300_clock_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_191) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_clock_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.i: cmake_force
@@ -4175,7 +4179,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_clock_ctrl.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o: ../lib/usrp/x300/x300_image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_192) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.i: cmake_force
@@ -4199,7 +4203,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_image_loader.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o: ../lib/usrp/x300/x300_mb_eeprom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_193) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/x300_mb_eeprom.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.i: cmake_force
@@ -4223,7 +4227,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/x300_mb_eeprom.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o: ../lib/usrp/x300/cdecode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_194) "Building C object lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o   -c /home/thompsonlab/Documents/uhd/host/lib/usrp/x300/cdecode.c
 
 lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.i: cmake_force
@@ -4247,7 +4251,7 @@ lib/CMakeFiles/uhd.dir/usrp/x300/cdecode.c.o.provides.build: lib/CMakeFiles/uhd.
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o: ../lib/usrp/b200/b200_image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.i: cmake_force
@@ -4271,7 +4275,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_image_loader.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o: ../lib/usrp/b200/b200_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.i: cmake_force
@@ -4295,7 +4299,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_impl.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o: ../lib/usrp/b200/b200_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.i: cmake_force
@@ -4319,7 +4323,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_iface.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o: ../lib/usrp/b200/b200_io_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_io_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.i: cmake_force
@@ -4343,7 +4347,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_io_impl.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o: ../lib/usrp/b200/b200_uart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_uart.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.i: cmake_force
@@ -4367,7 +4371,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_uart.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o: ../lib/usrp/b200/b200_cores.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_cores.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.i: cmake_force
@@ -4391,7 +4395,7 @@ lib/CMakeFiles/uhd.dir/usrp/b200/b200_cores.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o: ../lib/usrp/n230/n230_cores.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_cores.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.i: cmake_force
@@ -4415,7 +4419,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_cores.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o: ../lib/usrp/n230/n230_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.i: cmake_force
@@ -4439,7 +4443,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_impl.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o: ../lib/usrp/n230/n230_resource_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_resource_manager.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.i: cmake_force
@@ -4463,7 +4467,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_resource_manager.cpp.o.provides.build: lib
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o: ../lib/usrp/n230/n230_eeprom_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_eeprom_manager.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.i: cmake_force
@@ -4487,7 +4491,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_eeprom_manager.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o: ../lib/usrp/n230/n230_stream_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_stream_manager.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.i: cmake_force
@@ -4511,7 +4515,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_stream_manager.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o: ../lib/usrp/n230/n230_clk_pps_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_clk_pps_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.i: cmake_force
@@ -4535,7 +4539,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_clk_pps_ctrl.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o: ../lib/usrp/n230/n230_frontend_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_frontend_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.i: cmake_force
@@ -4559,7 +4563,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_frontend_ctrl.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o: ../lib/usrp/n230/n230_uart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_uart.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.i: cmake_force
@@ -4583,7 +4587,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_uart.cpp.o.provides.build: lib/CMakeFiles/
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o: ../lib/usrp/n230/n230_image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.i: cmake_force
@@ -4607,7 +4611,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_image_loader.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o: ../lib/usrp/n230/n230_fw_ctrl_iface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp/n230/n230_fw_ctrl_iface.cpp
 
 lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.i: cmake_force
@@ -4631,7 +4635,7 @@ lib/CMakeFiles/uhd.dir/usrp/n230/n230_fw_ctrl_iface.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o: ../lib/usrp_clock/multi_usrp_clock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/multi_usrp_clock.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.i: cmake_force
@@ -4655,7 +4659,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/multi_usrp_clock.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o: ../lib/usrp_clock/usrp_clock_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/usrp_clock_c.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.i: cmake_force
@@ -4679,7 +4683,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/usrp_clock_c.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o: ../lib/usrp_clock/octoclock/octoclock_eeprom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/octoclock/octoclock_eeprom.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.i: cmake_force
@@ -4703,7 +4707,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_eeprom.cpp.o.provides.buil
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o: ../lib/usrp_clock/octoclock/octoclock_image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/octoclock/octoclock_image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.i: cmake_force
@@ -4727,7 +4731,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_image_loader.cpp.o.provide
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o: ../lib/usrp_clock/octoclock/octoclock_impl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/octoclock/octoclock_impl.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.i: cmake_force
@@ -4751,7 +4755,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_impl.cpp.o.provides.build:
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o: ../lib/usrp_clock/octoclock/octoclock_uart.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/usrp_clock/octoclock/octoclock_uart.cpp
 
 lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.i: cmake_force
@@ -4775,7 +4779,7 @@ lib/CMakeFiles/uhd.dir/usrp_clock/octoclock/octoclock_uart.cpp.o.provides.build:
 
 lib/CMakeFiles/uhd.dir/utils/csv.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/csv.cpp.o: ../lib/utils/csv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building CXX object lib/CMakeFiles/uhd.dir/utils/csv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object lib/CMakeFiles/uhd.dir/utils/csv.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/csv.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/csv.cpp
 
 lib/CMakeFiles/uhd.dir/utils/csv.cpp.i: cmake_force
@@ -4799,7 +4803,7 @@ lib/CMakeFiles/uhd.dir/utils/csv.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/ut
 
 lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.o: ../lib/utils/gain_group.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building CXX object lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/gain_group.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/gain_group.cpp
 
 lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.i: cmake_force
@@ -4823,7 +4827,7 @@ lib/CMakeFiles/uhd.dir/utils/gain_group.cpp.o.provides.build: lib/CMakeFiles/uhd
 
 lib/CMakeFiles/uhd.dir/utils/ihex.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/ihex.cpp.o: ../lib/utils/ihex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building CXX object lib/CMakeFiles/uhd.dir/utils/ihex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object lib/CMakeFiles/uhd.dir/utils/ihex.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/ihex.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/ihex.cpp
 
 lib/CMakeFiles/uhd.dir/utils/ihex.cpp.i: cmake_force
@@ -4847,7 +4851,7 @@ lib/CMakeFiles/uhd.dir/utils/ihex.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/u
 
 lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.o: ../lib/utils/load_modules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building CXX object lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DHAVE_DLOPEN $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/load_modules.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/load_modules.cpp
 
 lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.i: cmake_force
@@ -4871,7 +4875,7 @@ lib/CMakeFiles/uhd.dir/utils/load_modules.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/utils/log.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/log.cpp.o: ../lib/utils/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building CXX object lib/CMakeFiles/uhd.dir/utils/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object lib/CMakeFiles/uhd.dir/utils/log.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/log.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/log.cpp
 
 lib/CMakeFiles/uhd.dir/utils/log.cpp.i: cmake_force
@@ -4895,7 +4899,7 @@ lib/CMakeFiles/uhd.dir/utils/log.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/ut
 
 lib/CMakeFiles/uhd.dir/utils/paths.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/paths.cpp.o: ../lib/utils/paths.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building CXX object lib/CMakeFiles/uhd.dir/utils/paths.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object lib/CMakeFiles/uhd.dir/utils/paths.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DUHD_LIB_DIR=\"lib\" -DUHD_PKG_PATH=\"/usr/local\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/paths.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/paths.cpp
 
 lib/CMakeFiles/uhd.dir/utils/paths.cpp.i: cmake_force
@@ -4919,7 +4923,7 @@ lib/CMakeFiles/uhd.dir/utils/paths.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/
 
 lib/CMakeFiles/uhd.dir/utils/platform.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/platform.cpp.o: ../lib/utils/platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building CXX object lib/CMakeFiles/uhd.dir/utils/platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object lib/CMakeFiles/uhd.dir/utils/platform.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/platform.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/platform.cpp
 
 lib/CMakeFiles/uhd.dir/utils/platform.cpp.i: cmake_force
@@ -4943,7 +4947,7 @@ lib/CMakeFiles/uhd.dir/utils/platform.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/utils/static.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/static.cpp.o: ../lib/utils/static.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building CXX object lib/CMakeFiles/uhd.dir/utils/static.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object lib/CMakeFiles/uhd.dir/utils/static.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/static.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/static.cpp
 
 lib/CMakeFiles/uhd.dir/utils/static.cpp.i: cmake_force
@@ -4967,7 +4971,7 @@ lib/CMakeFiles/uhd.dir/utils/static.cpp.o.provides.build: lib/CMakeFiles/uhd.dir
 
 lib/CMakeFiles/uhd.dir/utils/tasks.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/tasks.cpp.o: ../lib/utils/tasks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building CXX object lib/CMakeFiles/uhd.dir/utils/tasks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object lib/CMakeFiles/uhd.dir/utils/tasks.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/tasks.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/tasks.cpp
 
 lib/CMakeFiles/uhd.dir/utils/tasks.cpp.i: cmake_force
@@ -4991,7 +4995,7 @@ lib/CMakeFiles/uhd.dir/utils/tasks.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/
 
 lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.o: ../lib/utils/thread_priority.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building CXX object lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DHAVE_PTHREAD_SETSCHEDPARAM $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/thread_priority.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/thread_priority.cpp
 
 lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.i: cmake_force
@@ -5015,7 +5019,7 @@ lib/CMakeFiles/uhd.dir/utils/thread_priority.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o: ../lib/utils/thread_priority_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building CXX object lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/utils/thread_priority_c.cpp
 
 lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.i: cmake_force
@@ -5039,7 +5043,7 @@ lib/CMakeFiles/uhd.dir/utils/thread_priority_c.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.o: ../lib/experts/expert_container.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building CXX object lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/experts/expert_container.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/experts/expert_container.cpp
 
 lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.i: cmake_force
@@ -5063,7 +5067,7 @@ lib/CMakeFiles/uhd.dir/experts/expert_container.cpp.o.provides.build: lib/CMakeF
 
 lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.o: ../lib/experts/expert_factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building CXX object lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/experts/expert_factory.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/experts/expert_factory.cpp
 
 lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.i: cmake_force
@@ -5087,7 +5091,7 @@ lib/CMakeFiles/uhd.dir/experts/expert_factory.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o: lib/transport/nirio/lvbitx/x300_lvbitx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x300_lvbitx.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.i: cmake_force
@@ -5111,7 +5115,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x300_lvbitx.cpp.o.provides.build: 
 
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o: lib/transport/nirio/lvbitx/x310_lvbitx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/transport/nirio/lvbitx/x310_lvbitx.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.i: cmake_force
@@ -5135,7 +5139,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/lvbitx/x310_lvbitx.cpp.o.provides.build: 
 
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o: ../lib/transport/nirio/rpc/rpc_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/rpc/rpc_client.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.i: cmake_force
@@ -5159,7 +5163,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/rpc/rpc_client.cpp.o.provides.build: lib/
 
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o: ../lib/transport/nirio/rpc/usrprio_rpc_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/rpc/usrprio_rpc_client.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.i: cmake_force
@@ -5183,7 +5187,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/rpc/usrprio_rpc_client.cpp.o.provides.bui
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o: ../lib/transport/nirio/nifpga_lvbitx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/nifpga_lvbitx.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.i: cmake_force
@@ -5207,7 +5211,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/nifpga_lvbitx.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o: ../lib/transport/nirio/niusrprio_session.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/niusrprio_session.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.i: cmake_force
@@ -5231,7 +5235,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/niusrprio_session.cpp.o.provides.build: l
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o: ../lib/transport/nirio/niriok_proxy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/niriok_proxy.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.i: cmake_force
@@ -5255,7 +5259,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o: ../lib/transport/nirio/niriok_proxy_impl_v1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/niriok_proxy_impl_v1.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.i: cmake_force
@@ -5279,7 +5283,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v1.cpp.o.provides.build
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o: ../lib/transport/nirio/niriok_proxy_impl_v2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/niriok_proxy_impl_v2.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.i: cmake_force
@@ -5303,7 +5307,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/niriok_proxy_impl_v2.cpp.o.provides.build
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o: ../lib/transport/nirio/nirio_resource_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/nirio_resource_manager.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.i: cmake_force
@@ -5327,7 +5331,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/nirio_resource_manager.cpp.o.provides.bui
 
 lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.o: ../lib/transport/nirio/status.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/status.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/status.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.i: cmake_force
@@ -5351,7 +5355,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/status.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o: ../lib/transport/nirio/nirio_driver_iface_linux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio/nirio_driver_iface_linux.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.i: cmake_force
@@ -5375,7 +5379,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio/nirio_driver_iface_linux.cpp.o.provides.b
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o: ../lib/transport/libusb1_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/libusb1_control.cpp
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.i: cmake_force
@@ -5399,7 +5403,7 @@ lib/CMakeFiles/uhd.dir/transport/libusb1_control.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o: ../lib/transport/libusb1_zero_copy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DHAVE_LIBUSB_ERROR_NAME=1 -DHAVE_LIBUSB_HANDLE_EVENTS_TIMEOUT_COMPLETED=1 -DHAVE_LIBUSB_STRERROR=1 $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/libusb1_zero_copy.cpp
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.i: cmake_force
@@ -5423,7 +5427,7 @@ lib/CMakeFiles/uhd.dir/transport/libusb1_zero_copy.cpp.o.provides.build: lib/CMa
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o: ../lib/transport/libusb1_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/libusb1_base.cpp
 
 lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.i: cmake_force
@@ -5447,7 +5451,7 @@ lib/CMakeFiles/uhd.dir/transport/libusb1_base.cpp.o.provides.build: lib/CMakeFil
 
 lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o: ../lib/transport/udp_zero_copy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building CXX object lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/udp_zero_copy.cpp
 
 lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.i: cmake_force
@@ -5471,7 +5475,7 @@ lib/CMakeFiles/uhd.dir/transport/udp_zero_copy.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o: lib/transport/vrt_if_packet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building CXX object lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/transport/vrt_if_packet.cpp
 
 lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.i: cmake_force
@@ -5495,7 +5499,7 @@ lib/CMakeFiles/uhd.dir/transport/vrt_if_packet.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o: ../lib/transport/zero_copy_recv_offload.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building CXX object lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/zero_copy_recv_offload.cpp
 
 lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.i: cmake_force
@@ -5519,7 +5523,7 @@ lib/CMakeFiles/uhd.dir/transport/zero_copy_recv_offload.cpp.o.provides.build: li
 
 lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o: ../lib/transport/tcp_zero_copy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building CXX object lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/tcp_zero_copy.cpp
 
 lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.i: cmake_force
@@ -5543,7 +5547,7 @@ lib/CMakeFiles/uhd.dir/transport/tcp_zero_copy.cpp.o.provides.build: lib/CMakeFi
 
 lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o: ../lib/transport/buffer_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building CXX object lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/buffer_pool.cpp
 
 lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.i: cmake_force
@@ -5567,7 +5571,7 @@ lib/CMakeFiles/uhd.dir/transport/buffer_pool.cpp.o.provides.build: lib/CMakeFile
 
 lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.o: ../lib/transport/if_addrs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building CXX object lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) -DHAVE_GETIFADDRS $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/if_addrs.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/if_addrs.cpp
 
 lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.i: cmake_force
@@ -5591,7 +5595,7 @@ lib/CMakeFiles/uhd.dir/transport/if_addrs.cpp.o.provides.build: lib/CMakeFiles/u
 
 lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.o: ../lib/transport/udp_simple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building CXX object lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/udp_simple.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/udp_simple.cpp
 
 lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.i: cmake_force
@@ -5615,7 +5619,7 @@ lib/CMakeFiles/uhd.dir/transport/udp_simple.cpp.o.provides.build: lib/CMakeFiles
 
 lib/CMakeFiles/uhd.dir/transport/chdr.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/chdr.cpp.o: ../lib/transport/chdr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building CXX object lib/CMakeFiles/uhd.dir/transport/chdr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object lib/CMakeFiles/uhd.dir/transport/chdr.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/chdr.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/chdr.cpp
 
 lib/CMakeFiles/uhd.dir/transport/chdr.cpp.i: cmake_force
@@ -5639,7 +5643,7 @@ lib/CMakeFiles/uhd.dir/transport/chdr.cpp.o.provides.build: lib/CMakeFiles/uhd.d
 
 lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o: ../lib/transport/muxed_zero_copy_if.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building CXX object lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/muxed_zero_copy_if.cpp
 
 lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.i: cmake_force
@@ -5663,7 +5667,7 @@ lib/CMakeFiles/uhd.dir/transport/muxed_zero_copy_if.cpp.o.provides.build: lib/CM
 
 lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o: ../lib/transport/zero_copy_flow_ctrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building CXX object lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/zero_copy_flow_ctrl.cpp
 
 lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.i: cmake_force
@@ -5687,7 +5691,7 @@ lib/CMakeFiles/uhd.dir/transport/zero_copy_flow_ctrl.cpp.o.provides.build: lib/C
 
 lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o: ../lib/transport/nirio_zero_copy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/transport/nirio_zero_copy.cpp
 
 lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.i: cmake_force
@@ -5711,7 +5715,7 @@ lib/CMakeFiles/uhd.dir/transport/nirio_zero_copy.cpp.o.provides.build: lib/CMake
 
 lib/CMakeFiles/uhd.dir/build_info.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/build_info.cpp.o: lib/build_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building CXX object lib/CMakeFiles/uhd.dir/build_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object lib/CMakeFiles/uhd.dir/build_info.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/build_info.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/build_info.cpp
 
 lib/CMakeFiles/uhd.dir/build_info.cpp.i: cmake_force
@@ -5735,7 +5739,7 @@ lib/CMakeFiles/uhd.dir/build_info.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/b
 
 lib/CMakeFiles/uhd.dir/deprecated.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/deprecated.cpp.o: ../lib/deprecated.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building CXX object lib/CMakeFiles/uhd.dir/deprecated.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object lib/CMakeFiles/uhd.dir/deprecated.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/deprecated.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/deprecated.cpp
 
 lib/CMakeFiles/uhd.dir/deprecated.cpp.i: cmake_force
@@ -5759,7 +5763,7 @@ lib/CMakeFiles/uhd.dir/deprecated.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/d
 
 lib/CMakeFiles/uhd.dir/device.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/device.cpp.o: ../lib/device.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building CXX object lib/CMakeFiles/uhd.dir/device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object lib/CMakeFiles/uhd.dir/device.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/device.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/device.cpp
 
 lib/CMakeFiles/uhd.dir/device.cpp.i: cmake_force
@@ -5783,7 +5787,7 @@ lib/CMakeFiles/uhd.dir/device.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/devic
 
 lib/CMakeFiles/uhd.dir/device3.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/device3.cpp.o: ../lib/device3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building CXX object lib/CMakeFiles/uhd.dir/device3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object lib/CMakeFiles/uhd.dir/device3.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/device3.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/device3.cpp
 
 lib/CMakeFiles/uhd.dir/device3.cpp.i: cmake_force
@@ -5807,7 +5811,7 @@ lib/CMakeFiles/uhd.dir/device3.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/devi
 
 lib/CMakeFiles/uhd.dir/image_loader.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/image_loader.cpp.o: ../lib/image_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building CXX object lib/CMakeFiles/uhd.dir/image_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object lib/CMakeFiles/uhd.dir/image_loader.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/image_loader.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/image_loader.cpp
 
 lib/CMakeFiles/uhd.dir/image_loader.cpp.i: cmake_force
@@ -5831,7 +5835,7 @@ lib/CMakeFiles/uhd.dir/image_loader.cpp.o.provides.build: lib/CMakeFiles/uhd.dir
 
 lib/CMakeFiles/uhd.dir/stream.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/stream.cpp.o: ../lib/stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building CXX object lib/CMakeFiles/uhd.dir/stream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object lib/CMakeFiles/uhd.dir/stream.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/stream.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/stream.cpp
 
 lib/CMakeFiles/uhd.dir/stream.cpp.i: cmake_force
@@ -5855,7 +5859,7 @@ lib/CMakeFiles/uhd.dir/stream.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/strea
 
 lib/CMakeFiles/uhd.dir/exception.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/exception.cpp.o: ../lib/exception.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building CXX object lib/CMakeFiles/uhd.dir/exception.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object lib/CMakeFiles/uhd.dir/exception.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/exception.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/exception.cpp
 
 lib/CMakeFiles/uhd.dir/exception.cpp.i: cmake_force
@@ -5879,7 +5883,7 @@ lib/CMakeFiles/uhd.dir/exception.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/ex
 
 lib/CMakeFiles/uhd.dir/property_tree.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/property_tree.cpp.o: ../lib/property_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building CXX object lib/CMakeFiles/uhd.dir/property_tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object lib/CMakeFiles/uhd.dir/property_tree.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/property_tree.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/property_tree.cpp
 
 lib/CMakeFiles/uhd.dir/property_tree.cpp.i: cmake_force
@@ -5903,7 +5907,7 @@ lib/CMakeFiles/uhd.dir/property_tree.cpp.o.provides.build: lib/CMakeFiles/uhd.di
 
 lib/CMakeFiles/uhd.dir/version.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/version.cpp.o: lib/version.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building CXX object lib/CMakeFiles/uhd.dir/version.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object lib/CMakeFiles/uhd.dir/version.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/version.cpp.o -c /home/thompsonlab/Documents/uhd/host/build/lib/version.cpp
 
 lib/CMakeFiles/uhd.dir/version.cpp.i: cmake_force
@@ -5927,7 +5931,7 @@ lib/CMakeFiles/uhd.dir/version.cpp.o.provides.build: lib/CMakeFiles/uhd.dir/vers
 
 lib/CMakeFiles/uhd.dir/error_c.cpp.o: lib/CMakeFiles/uhd.dir/flags.make
 lib/CMakeFiles/uhd.dir/error_c.cpp.o: ../lib/error_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building CXX object lib/CMakeFiles/uhd.dir/error_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building CXX object lib/CMakeFiles/uhd.dir/error_c.cpp.o"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/uhd.dir/error_c.cpp.o -c /home/thompsonlab/Documents/uhd/host/lib/error_c.cpp
 
 lib/CMakeFiles/uhd.dir/error_c.cpp.i: cmake_force
@@ -6449,7 +6453,7 @@ lib/libuhd.so.3.11: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 lib/libuhd.so.3.11: /usr/lib/x86_64-linux-gnu/libpthread.so
 lib/libuhd.so.3.11: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 lib/libuhd.so.3.11: lib/CMakeFiles/uhd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Linking CXX shared library libuhd.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Linking CXX shared library libuhd.so"
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uhd.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/thompsonlab/Documents/uhd/host/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libuhd.so.3.11 libuhd.so.3 libuhd.so
 
@@ -6733,6 +6737,7 @@ lib/CMakeFiles/uhd.dir/depend: lib/ic_reg_maps/lmk04816_regs.hpp
 lib/CMakeFiles/uhd.dir/depend: lib/ic_reg_maps/adf5355_regs.hpp
 lib/CMakeFiles/uhd.dir/depend: lib/convert/convert_general.cpp
 lib/CMakeFiles/uhd.dir/depend: lib/rfnoc/nocscript/basic_functions.hpp
+lib/CMakeFiles/uhd.dir/depend: docs/nocscript_functions.dox
 lib/CMakeFiles/uhd.dir/depend: lib/transport/nirio/lvbitx/x300_lvbitx.cpp
 lib/CMakeFiles/uhd.dir/depend: lib/transport/nirio/lvbitx/x300_lvbitx.hpp
 lib/CMakeFiles/uhd.dir/depend: lib/transport/nirio/lvbitx/x310_lvbitx.cpp

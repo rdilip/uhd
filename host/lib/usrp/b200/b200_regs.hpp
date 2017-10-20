@@ -73,7 +73,6 @@ localparam SR_LLR_REG18	  = 182;
 localparam SR_LLR_REG19	  = 183;
 
 
-
 // JTL end
 
 

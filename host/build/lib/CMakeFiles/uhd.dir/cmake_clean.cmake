@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "ic_reg_maps/adf5355_regs.hpp"
   "convert/convert_general.cpp"
   "rfnoc/nocscript/basic_functions.hpp"
+  "../docs/nocscript_functions.dox"
   "transport/nirio/lvbitx/x300_lvbitx.cpp"
   "transport/nirio/lvbitx/x300_lvbitx.hpp"
   "transport/nirio/lvbitx/x310_lvbitx.cpp"

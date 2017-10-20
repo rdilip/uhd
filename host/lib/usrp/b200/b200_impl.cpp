@@ -13,6 +13,7 @@
 //
 
 #include "b200_impl.hpp"
+#include <sys/inotify.h>
 #include "b200_regs.hpp"
 #include <uhd/config.hpp>
 #include <uhd/transport/usb_control.hpp>
@@ -829,7 +830,6 @@ static void set_llr_reg19(radio_ctrl_core_3000::sptr iface, const uint32_t val)
 
 // Ending code added by JTL.
 
-
 /***********************************************************************
  * setup radio control objects
  **********************************************************************/
@@ -1016,6 +1016,11 @@ void b200_impl::setup_radio(const size_t dspno)
 	if (!inFile) {
 	UHD_LOGGER_INFO("B200") << "Could not open frequency file";
 	}
+
+	int fd;
+	fd = inotify_init();
+	if (fd < 0)
+		perror("inotify_init");
 	
 	while (!inFile.eof()) {
 		inFile >> i >> fq >> am >> ph;
@@ -1033,7 +1038,7 @@ void b200_impl::setup_radio(const size_t dspno)
 		if (!(am <= 1.0 && am >= 0.0)) {
 			UHD_LOGGER_INFO("B200") << "Amplitudes must be between 0 and 1:" << i;
 		}
-		if (!(ph <= 6.28 && ph >= 0.0)) {
+		if (!(ph <= 6.283185 && ph >= 0.0)) {
 			UHD_LOGGER_INFO("B200") << "Phases must be between 0 and 2 pi:" << i;
 		}
 
@@ -1052,7 +1057,6 @@ void b200_impl::setup_radio(const size_t dspno)
 		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(comb_fq_am_ph);
 		}
 	}
-
 	// END JTL code
 	
 

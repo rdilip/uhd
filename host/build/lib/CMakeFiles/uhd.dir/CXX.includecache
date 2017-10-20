@@ -4201,6 +4201,8 @@ b200_impl.hpp
 /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_impl.cpp
 b200_impl.hpp
 /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_impl.hpp
+sys/inotify.h
+-
 b200_regs.hpp
 /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_regs.hpp
 uhd/config.hpp

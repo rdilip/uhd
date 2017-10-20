@@ -33,7 +33,7 @@ UHD_STATIC_BLOCK(print_system_info){
 #endif
 
 std::string uhd::get_version_string(void){
-    return "3.11.0.git-162-g2790b51f";
+    return "3.11.0.git-172-g9dc91b4c";
 }
 
 std::string uhd::get_abi_string(void){
