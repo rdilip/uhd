@@ -101,6 +101,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
@@ -143,17 +154,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -353,21 +353,6 @@ rx_multi_samples/fast:
 .PHONY : rx_multi_samples/fast
 
 # Convenience name for target.
-examples/CMakeFiles/rx_samples_to_udp.dir/rule:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_to_udp.dir/rule
-.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/rule
-
-# Convenience name for target.
-rx_samples_to_udp: examples/CMakeFiles/rx_samples_to_udp.dir/rule
-
-.PHONY : rx_samples_to_udp
-
-# fast build rule for target.
-rx_samples_to_udp/fast:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
-.PHONY : rx_samples_to_udp/fast
-
-# Convenience name for target.
 examples/CMakeFiles/tx_timed_samples.dir/rule:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_timed_samples.dir/rule
 .PHONY : examples/CMakeFiles/tx_timed_samples.dir/rule
@@ -456,6 +441,36 @@ tx_samples_from_file: examples/CMakeFiles/tx_samples_from_file.dir/rule
 tx_samples_from_file/fast:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tx_samples_from_file.dir/build.make examples/CMakeFiles/tx_samples_from_file.dir/build
 .PHONY : tx_samples_from_file/fast
+
+# Convenience name for target.
+examples/CMakeFiles/rx_samples_to_udp.dir/rule:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_to_udp.dir/rule
+.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/rule
+
+# Convenience name for target.
+rx_samples_to_udp: examples/CMakeFiles/rx_samples_to_udp.dir/rule
+
+.PHONY : rx_samples_to_udp
+
+# fast build rule for target.
+rx_samples_to_udp/fast:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
+.PHONY : rx_samples_to_udp/fast
+
+# Convenience name for target.
+examples/CMakeFiles/tfd.dir/rule:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tfd.dir/rule
+.PHONY : examples/CMakeFiles/tfd.dir/rule
+
+# Convenience name for target.
+tfd: examples/CMakeFiles/tfd.dir/rule
+
+.PHONY : tfd
+
+# fast build rule for target.
+tfd/fast:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/build
+.PHONY : tfd/fast
 
 # Convenience name for target.
 examples/CMakeFiles/gpio.dir/rule:
@@ -907,6 +922,33 @@ test_timed_commands.cpp.s:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/test_timed_commands.dir/build.make examples/CMakeFiles/test_timed_commands.dir/test_timed_commands.cpp.s
 .PHONY : test_timed_commands.cpp.s
 
+tfd.o: tfd.cpp.o
+
+.PHONY : tfd.o
+
+# target to build an object file
+tfd.cpp.o:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.o
+.PHONY : tfd.cpp.o
+
+tfd.i: tfd.cpp.i
+
+.PHONY : tfd.i
+
+# target to preprocess a source file
+tfd.cpp.i:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.i
+.PHONY : tfd.cpp.i
+
+tfd.s: tfd.cpp.s
+
+.PHONY : tfd.s
+
+# target to generate assembly for a file
+tfd.cpp.s:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.s
+.PHONY : tfd.cpp.s
+
 tx_bursts.o: tx_bursts.cpp.o
 
 .PHONY : tx_bursts.o
@@ -1079,6 +1121,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... sync_to_gps"
 	@echo "... test_dboard_coercion"
 	@echo "... test_pps_input"
@@ -1091,7 +1134,6 @@ help:
 	@echo "... txrx_loopback_to_file"
 	@echo "... rx_samples_c"
 	@echo "... rx_multi_samples"
-	@echo "... rx_samples_to_udp"
 	@echo "... tx_timed_samples"
 	@echo "... tx_waveforms"
 	@echo "... network_relay"
@@ -1100,11 +1142,12 @@ help:
 	@echo "... tx_bursts"
 	@echo "... rebuild_cache"
 	@echo "... tx_samples_from_file"
+	@echo "... rx_samples_to_udp"
+	@echo "... tfd"
 	@echo "... gpio"
 	@echo "... test_clock_synch"
 	@echo "... test"
 	@echo "... tx_samples_c"
-	@echo "... install/strip"
 	@echo "... benchmark_rate.o"
 	@echo "... benchmark_rate.i"
 	@echo "... benchmark_rate.s"
@@ -1150,6 +1193,9 @@ help:
 	@echo "... test_timed_commands.o"
 	@echo "... test_timed_commands.i"
 	@echo "... test_timed_commands.s"
+	@echo "... tfd.o"
+	@echo "... tfd.i"
+	@echo "... tfd.s"
 	@echo "... tx_bursts.o"
 	@echo "... tx_bursts.i"
 	@echo "... tx_bursts.s"

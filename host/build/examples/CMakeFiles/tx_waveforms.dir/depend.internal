@@ -9,6 +9,12 @@ examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o
  ../include/uhd/property_tree.hpp
  ../include/uhd/property_tree.ipp
  ../include/uhd/stream.hpp
+ ../include/uhd/transport/bounded_buffer.hpp
+ ../include/uhd/transport/bounded_buffer.ipp
+ ../include/uhd/transport/usb_control.hpp
+ ../include/uhd/transport/usb_device_handle.hpp
+ ../include/uhd/transport/usb_zero_copy.hpp
+ ../include/uhd/transport/zero_copy.hpp
  ../include/uhd/types/clock_config.hpp
  ../include/uhd/types/device_addr.hpp
  ../include/uhd/types/dict.hpp
@@ -27,13 +33,22 @@ examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o
  ../include/uhd/usrp/dboard_iface.hpp
  ../include/uhd/usrp/fe_connection.hpp
  ../include/uhd/usrp/gpio_defs.hpp
+ ../include/uhd/usrp/gps_ctrl.hpp
+ ../include/uhd/usrp/mboard_eeprom.hpp
  ../include/uhd/usrp/multi_usrp.hpp
  ../include/uhd/usrp/subdev_spec.hpp
  ../include/uhd/utils/log.hpp
  ../include/uhd/utils/pimpl.hpp
  ../include/uhd/utils/safe_main.hpp
  ../include/uhd/utils/static.hpp
+ ../include/uhd/utils/tasks.hpp
  ../include/uhd/utils/thread_priority.hpp
  /home/thompsonlab/Documents/uhd/host/examples/tx_waveforms.cpp
  /home/thompsonlab/Documents/uhd/host/examples/usage.h
  /home/thompsonlab/Documents/uhd/host/examples/wavetable.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_cores.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_iface.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_impl.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_regs.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/b200/b200_uart.hpp
+ /home/thompsonlab/Documents/uhd/host/lib/usrp/common/ad9361_ctrl.hpp

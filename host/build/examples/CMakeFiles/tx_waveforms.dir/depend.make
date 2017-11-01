@@ -8,6 +8,12 @@ examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/exceptio
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/property_tree.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/property_tree.ipp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/stream.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/bounded_buffer.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/bounded_buffer.ipp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/usb_control.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/usb_device_handle.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/usb_zero_copy.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/transport/zero_copy.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/types/clock_config.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/types/device_addr.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/types/dict.hpp
@@ -26,14 +32,23 @@ examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/types/tu
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/dboard_iface.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/fe_connection.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/gpio_defs.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/gps_ctrl.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/mboard_eeprom.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/multi_usrp.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/usrp/subdev_spec.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/log.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/pimpl.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/safe_main.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/static.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/tasks.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../include/uhd/utils/thread_priority.hpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../examples/tx_waveforms.cpp
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../examples/usage.h
 examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../examples/wavetable.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/b200/b200_cores.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/b200/b200_iface.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/b200/b200_impl.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/b200/b200_regs.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/b200/b200_uart.hpp
+examples/CMakeFiles/tx_waveforms.dir/tx_waveforms.cpp.o: ../lib/usrp/common/ad9361_ctrl.hpp
 
