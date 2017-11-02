@@ -112,6 +112,17 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
@@ -143,17 +154,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -188,6 +188,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+examples/CMakeFiles/tx_samples_c.dir/rule:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_samples_c.dir/rule
+.PHONY : examples/CMakeFiles/tx_samples_c.dir/rule
+
+# Convenience name for target.
+tx_samples_c: examples/CMakeFiles/tx_samples_c.dir/rule
+
+.PHONY : tx_samples_c
+
+# fast build rule for target.
+tx_samples_c/fast:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
+.PHONY : tx_samples_c/fast
+
+# Convenience name for target.
 examples/CMakeFiles/sync_to_gps.dir/rule:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/sync_to_gps.dir/rule
 .PHONY : examples/CMakeFiles/sync_to_gps.dir/rule
@@ -201,6 +216,21 @@ sync_to_gps: examples/CMakeFiles/sync_to_gps.dir/rule
 sync_to_gps/fast:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/sync_to_gps.dir/build.make examples/CMakeFiles/sync_to_gps.dir/build
 .PHONY : sync_to_gps/fast
+
+# Convenience name for target.
+examples/CMakeFiles/TFDModule.dir/rule:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/TFDModule.dir/rule
+.PHONY : examples/CMakeFiles/TFDModule.dir/rule
+
+# Convenience name for target.
+TFDModule: examples/CMakeFiles/TFDModule.dir/rule
+
+.PHONY : TFDModule
+
+# fast build rule for target.
+TFDModule/fast:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/TFDModule.dir/build.make examples/CMakeFiles/TFDModule.dir/build
+.PHONY : TFDModule/fast
 
 # Convenience name for target.
 examples/CMakeFiles/test_dboard_coercion.dir/rule:
@@ -501,21 +531,6 @@ test_clock_synch: examples/CMakeFiles/test_clock_synch.dir/rule
 test_clock_synch/fast:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/test_clock_synch.dir/build.make examples/CMakeFiles/test_clock_synch.dir/build
 .PHONY : test_clock_synch/fast
-
-# Convenience name for target.
-examples/CMakeFiles/tx_samples_c.dir/rule:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_samples_c.dir/rule
-.PHONY : examples/CMakeFiles/tx_samples_c.dir/rule
-
-# Convenience name for target.
-tx_samples_c: examples/CMakeFiles/tx_samples_c.dir/rule
-
-.PHONY : tx_samples_c
-
-# fast build rule for target.
-tx_samples_c/fast:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
-.PHONY : tx_samples_c/fast
 
 benchmark_rate.o: benchmark_rate.cpp.o
 
@@ -922,32 +937,59 @@ test_timed_commands.cpp.s:
 	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/test_timed_commands.dir/build.make examples/CMakeFiles/test_timed_commands.dir/test_timed_commands.cpp.s
 .PHONY : test_timed_commands.cpp.s
 
-tfd.o: tfd.cpp.o
+tfd/TFDModule.o: tfd/TFDModule.cpp.o
 
-.PHONY : tfd.o
+.PHONY : tfd/TFDModule.o
 
 # target to build an object file
-tfd.cpp.o:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.o
-.PHONY : tfd.cpp.o
+tfd/TFDModule.cpp.o:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/TFDModule.dir/build.make examples/CMakeFiles/TFDModule.dir/tfd/TFDModule.cpp.o
+.PHONY : tfd/TFDModule.cpp.o
 
-tfd.i: tfd.cpp.i
+tfd/TFDModule.i: tfd/TFDModule.cpp.i
 
-.PHONY : tfd.i
+.PHONY : tfd/TFDModule.i
 
 # target to preprocess a source file
-tfd.cpp.i:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.i
-.PHONY : tfd.cpp.i
+tfd/TFDModule.cpp.i:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/TFDModule.dir/build.make examples/CMakeFiles/TFDModule.dir/tfd/TFDModule.cpp.i
+.PHONY : tfd/TFDModule.cpp.i
 
-tfd.s: tfd.cpp.s
+tfd/TFDModule.s: tfd/TFDModule.cpp.s
 
-.PHONY : tfd.s
+.PHONY : tfd/TFDModule.s
 
 # target to generate assembly for a file
-tfd.cpp.s:
-	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd.cpp.s
-.PHONY : tfd.cpp.s
+tfd/TFDModule.cpp.s:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/TFDModule.dir/build.make examples/CMakeFiles/TFDModule.dir/tfd/TFDModule.cpp.s
+.PHONY : tfd/TFDModule.cpp.s
+
+tfd/tfd.o: tfd/tfd.cpp.o
+
+.PHONY : tfd/tfd.o
+
+# target to build an object file
+tfd/tfd.cpp.o:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd/tfd.cpp.o
+.PHONY : tfd/tfd.cpp.o
+
+tfd/tfd.i: tfd/tfd.cpp.i
+
+.PHONY : tfd/tfd.i
+
+# target to preprocess a source file
+tfd/tfd.cpp.i:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd/tfd.cpp.i
+.PHONY : tfd/tfd.cpp.i
+
+tfd/tfd.s: tfd/tfd.cpp.s
+
+.PHONY : tfd/tfd.s
+
+# target to generate assembly for a file
+tfd/tfd.cpp.s:
+	cd /home/thompsonlab/Documents/uhd/host/build && $(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/tfd/tfd.cpp.s
+.PHONY : tfd/tfd.cpp.s
 
 tx_bursts.o: tx_bursts.cpp.o
 
@@ -1122,7 +1164,10 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... test"
+	@echo "... tx_samples_c"
 	@echo "... sync_to_gps"
+	@echo "... TFDModule"
 	@echo "... test_dboard_coercion"
 	@echo "... test_pps_input"
 	@echo "... test_timed_commands"
@@ -1146,8 +1191,6 @@ help:
 	@echo "... tfd"
 	@echo "... gpio"
 	@echo "... test_clock_synch"
-	@echo "... test"
-	@echo "... tx_samples_c"
 	@echo "... benchmark_rate.o"
 	@echo "... benchmark_rate.i"
 	@echo "... benchmark_rate.s"
@@ -1193,9 +1236,12 @@ help:
 	@echo "... test_timed_commands.o"
 	@echo "... test_timed_commands.i"
 	@echo "... test_timed_commands.s"
-	@echo "... tfd.o"
-	@echo "... tfd.i"
-	@echo "... tfd.s"
+	@echo "... tfd/TFDModule.o"
+	@echo "... tfd/TFDModule.i"
+	@echo "... tfd/TFDModule.s"
+	@echo "... tfd/tfd.o"
+	@echo "... tfd/tfd.i"
+	@echo "... tfd/tfd.s"
 	@echo "... tx_bursts.o"
 	@echo "... tx_bursts.i"
 	@echo "... tx_bursts.s"
