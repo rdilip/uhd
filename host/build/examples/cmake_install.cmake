@@ -333,21 +333,21 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "example
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "examples")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uhd/examples" TYPE EXECUTABLE FILES "/home/thompsonlab/Documents/uhd/host/build/examples/TFDModule")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uhd/examples" TYPE EXECUTABLE FILES "/home/thompsonlab/Documents/uhd/host/build/examples/tfd_run")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run"
          OLD_RPATH "/home/thompsonlab/Documents/uhd/host/build/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/TFDModule")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/uhd/examples/tfd_run")
     endif()
   endif()
 endif()
