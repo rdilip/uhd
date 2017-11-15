@@ -28,6 +28,7 @@
 #include <csignal>
 #include <thread>
 #include <zmq.hpp>
+#include <bitset>
 #include <unistd.h>
 #include <string>
 #include <sstream>
@@ -40,7 +41,11 @@ using namespace std;
 static bool stop_signal_called = false;
 void sig_int_handler(int){stop_signal_called = true;}
 double MASTER_CLOCK_RATE;
+int debug_mode = 0; // If 1, extracts bin file from Desktop/build
 bool run_complete = false;
+const int N = 20; // Number of tones
+float amplitudes[N] = {-1.0};
+float dc_offset = 0;
 
 static void update(uhd::tx_streamer::sptr _tx_stream, std::vector<std::complex<float> > buff,
 	std::vector<std::complex<float> *> buffs, uhd::tx_metadata_t md) {	
@@ -72,7 +77,13 @@ tfd::tfd(float _freq, float _gain, float _clock_rate, uint64_t _spb) {
 
 	spb = _spb;
 	uhd::set_thread_priority_safe();
-	std::string device_args("master_clock_rate=" + std::to_string(MASTER_CLOCK_RATE) + "e6,fpga=/home/thompsonlab/Documents/fpga/usrp3/top/b200/build/usrp_b200_fpga.bin");
+	std::string fpga_path = "/home/thompsonlab/Documents/fpga/usrp3/top/b200/build/usrp_b200_fpga.bin";
+	if (debug_mode) {
+		fpga_path = "/home/thompsonlab/Desktop/build/usrp_b200_fpga.bin";
+	}
+	std::string device_args("master_clock_rate=" + std::to_string(MASTER_CLOCK_RATE) + "e6,fpga=" + fpga_path);
+	//
+	// 
 	std::string subdev("A:0");
 	std::string ant("TX/RX");
 	std::string ref("internal");
@@ -95,8 +106,7 @@ tfd::tfd(float _freq, float _gain, float _clock_rate, uint64_t _spb) {
     std::vector<size_t> channel_nums;
     boost::split(channel_strings, "0", boost::is_any_of("\"',"));
     for(size_t ch = 0; ch < channel_strings.size(); ch++){
-        size_t chan = boost::lexical_cast<int>(channel_strings[ch]);
-        if(chan >= usrp->get_tx_num_channels())
+        size_t chan = boost::lexical_cast<int>(channel_strings[ch]); if(chan >= usrp->get_tx_num_channels())
             throw std::runtime_error("Invalid channel(s) specified.");
         else
             channel_nums.push_back(boost::lexical_cast<int>(channel_strings[ch]));
@@ -150,7 +160,21 @@ void tfd::set_freq(int _index, float _fq, float _am, float _ph) {
 	uint32_t comb_fq_am_ph;
 	comb_fq_am_ph = combine(_fq, _am, _ph);
 
+	if (amplitudes[_index] < 0) {
+		dc_offset += _am;
+	} else {
+		dc_offset += (-1.0 * amplitudes[_index] + _am);
+	}
+
+	amplitudes[_index] = _am;
+
 	tree->access<uint32_t>(rx_dsp_path / "llr_reg" + std::to_string(_index)).set(comb_fq_am_ph);
+}
+
+void tfd::set_offset(uint16_t _dc_offset) {
+	const uhd::fs_path mb_path = "/mboards/0";
+	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
+	tree->access<uint16_t>(rx_dsp_path / "dc_offset").set(_dc_offset);
 }
 
 void tfd::print_parameters()	{
@@ -166,6 +190,7 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 	float amp;
 	float ph;
 	int i;
+	float dc;
 
 	float freq;
 	float  gain;
@@ -177,6 +202,7 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
         ("freq", po::value<float>(&freq)->default_value(80E6), "RF center frequency in Hz, default 80 MHz")
         ("gain", po::value<float>(&gain)->default_value(90), "gain for the RF chain, default 90")
 		  ("clock_rate", po::value<float>(&clock_rate)->default_value(32.768), "Master clock rate in MHz, 32.768 default")
+		  ("debug_mode",po::value<int>(&debug_mode)->default_value(0), "Enter debug mode?")
     ;
 
 	po::variables_map vm;
@@ -195,6 +221,8 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 
 
 	while (true) {
+
+		mytfd.set_offset(std::pow(2,16) - (uint16_t)(327 * dc_offset));
 		zmq::message_t request;
 		socket.recv(&request);
 		std::string replyMessage = std::string(static_cast<char *>(request.data()), request.size());
@@ -202,8 +230,9 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 		is >> i >> fq >> amp >> ph;
 
 		mytfd.set_freq(i, fq, amp, ph);
+		// 5 is just there so I don't suddenly shoot to an insanely high value
 		
-		sleep(0.5);
+		sleep(0.25);
 
 		std::string msgToClient("");
 		zmq::message_t reply(msgToClient.size());

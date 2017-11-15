@@ -36,6 +36,7 @@
 #include <ctime>
 #include <cmath>
 #include <fstream>
+#include <unistd.h>
 
 #include "../../transport/libusb1_base.hpp"
 
@@ -731,6 +732,10 @@ b200_impl::~b200_impl(void)
 }
 
 // Adding code to poke the thing. A lot of this is unecessary. JTL
+static void set_dc_offset(radio_ctrl_core_3000::sptr iface, const uint16_t val)
+{
+  iface->poke32(TOREG(SR_DC_OFFSET), val);
+}
 static void set_cmd_rx(radio_ctrl_core_3000::sptr iface, const uint32_t val)
 {
   iface->poke32(TOREG(SR_CMD_RX), val);
@@ -828,6 +833,48 @@ static void set_llr_reg19(radio_ctrl_core_3000::sptr iface, const uint32_t val)
 	iface->poke32(TOREG(SR_LLR_REG19), val);
 }
 
+/*
+static void set_llr_reg20(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+  iface->poke32(TOREG(SR_LLR_REG20), val);
+}
+static void set_llr_reg21(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG21), val);
+}
+static void set_llr_reg22(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG22), val);
+}
+static void set_llr_reg23(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG23), val);
+}
+static void set_llr_reg24(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG24), val);
+}
+static void set_llr_reg25(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG25), val);
+}
+static void set_llr_reg26(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG26), val);
+}
+static void set_llr_reg27(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG27), val);
+}
+static void set_llr_reg28(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG28), val);
+}
+static void set_llr_reg29(radio_ctrl_core_3000::sptr iface, const uint32_t val)
+{
+	iface->poke32(TOREG(SR_LLR_REG29), val);
+}
+*/
 // Ending code added by JTL.
 
 /***********************************************************************
@@ -914,6 +961,9 @@ void b200_impl::setup_radio(const size_t dspno)
     // create tx dsp control objects
     ////////////////////////////////////////////////////////////////////
     const fs_path tx_dsp_path = mb_path / "tx_dsps" / dspno;
+	UHD_LOGGER_INFO("B200") << "The dspno value is " << dspno;
+	UHD_LOGGER_INFO("B200") << "The SID value is " << sid;
+
     perif.duc->populate_subtree(_tree->subtree(tx_dsp_path));
     _tree->create<bool>(tx_dsp_path / "rate" / "set").set(false);
     _tree->access<double>(tx_dsp_path / "rate" / "value")
@@ -941,6 +991,9 @@ void b200_impl::setup_radio(const size_t dspno)
 
     _tree->create<uint32_t>(rx_dsp_path / "cntrl")
       .add_coerced_subscriber(boost::bind(&set_cntrl, perif.ctrl, _1))
+      .set(0x00);
+    _tree->create<uint32_t>(rx_dsp_path / "dc_offset")
+      .add_coerced_subscriber(boost::bind(&set_dc_offset, perif.ctrl, _1))
       .set(0x00);
 
     _tree->create<uint32_t>(rx_dsp_path / "llr_reg0")
@@ -1003,15 +1056,62 @@ void b200_impl::setup_radio(const size_t dspno)
 	_tree->create<uint32_t>(rx_dsp_path / "llr_reg19")
 		.add_coerced_subscriber(boost::bind(&set_llr_reg19, perif.ctrl, _1))
 		.set(0x00);
- 
+		/*
+     _tree->create<uint32_t>(rx_dsp_path / "llr_reg20")
+      .add_coerced_subscriber(boost::bind(&set_llr_reg20, perif.ctrl, _1))
+      .set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg21")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg21, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg22")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg22, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg23")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg23, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg24")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg24, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg25")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg25, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg26")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg26, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg27")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg27, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg28")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg28, perif.ctrl, _1))
+		.set(0x00);
+	_tree->create<uint32_t>(rx_dsp_path / "llr_reg29")
+		.add_coerced_subscriber(boost::bind(&set_llr_reg29, perif.ctrl, _1))
+		.set(0x00);
+		*/
 
+/*
 	int i;
 	double fq, am, ph;
 	uint16_t fq0;
 	uint8_t am0, ph0;
 	uint32_t comb_fq_am_ph;
+	uint32_t tmp_comb;
+
 	std::string file_spec;
 	std::ifstream inFile("/home/thompsonlab/Documents/uhd/host/lib/usrp/b200/freq.txt");
+	int time;
+	time = 0;
+	while (true) {
+		time = time % 10;
+		fq = time;
+		fq0 = (uint16_t)((fq / 32.768)*(std::pow(2,16)));
+		
+		tmp_comb = 0;
+		tmp_comb = (tmp_comb << 8) | 250;
+		tmp_comb = (tmp_comb << 16) | fq0;
+		_tree->access<uint32_t>(rx_dsp_path / "llr_reg0").set(tmp_comb);
+		time = time + 1;
+	}
 	
 	if (!inFile) {
 	UHD_LOGGER_INFO("B200") << "Could not open frequency file";
@@ -1021,7 +1121,6 @@ void b200_impl::setup_radio(const size_t dspno)
 	fd = inotify_init();
 	if (fd < 0)
 		perror("inotify_init");
-	
 	while (!inFile.eof()) {
 		inFile >> i >> fq >> am >> ph;
 		std::string id = std::to_string(i);
@@ -1057,6 +1156,7 @@ void b200_impl::setup_radio(const size_t dspno)
 		_tree->access<uint32_t>(rx_dsp_path / file_spec).set(comb_fq_am_ph);
 		}
 	}
+*/
 	// END JTL code
 	
 
@@ -1099,6 +1199,8 @@ void b200_impl::setup_radio(const size_t dspno)
             _tree->create<std::string>(rf_fe_path / "antenna" / "value").set("TX/RX");
         }
     }
+
+
 }
 
 /***********************************************************************

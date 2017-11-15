@@ -214,6 +214,19 @@ uhd/fast:
 .PHONY : uhd/fast
 
 #=============================================================================
+# Target rules for targets named tx_samples_c
+
+# Build rule for target.
+tx_samples_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tx_samples_c
+.PHONY : tx_samples_c
+
+# fast build rule for target.
+tx_samples_c/fast:
+	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
+.PHONY : tx_samples_c/fast
+
+#=============================================================================
 # Target rules for targets named sync_to_gps
 
 # Build rule for target.
@@ -357,19 +370,6 @@ rx_multi_samples/fast:
 .PHONY : rx_multi_samples/fast
 
 #=============================================================================
-# Target rules for targets named rx_samples_to_udp
-
-# Build rule for target.
-rx_samples_to_udp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rx_samples_to_udp
-.PHONY : rx_samples_to_udp
-
-# fast build rule for target.
-rx_samples_to_udp/fast:
-	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
-.PHONY : rx_samples_to_udp/fast
-
-#=============================================================================
 # Target rules for targets named tx_timed_samples
 
 # Build rule for target.
@@ -435,6 +435,19 @@ tx_bursts/fast:
 .PHONY : tx_bursts/fast
 
 #=============================================================================
+# Target rules for targets named tfd_run
+
+# Build rule for target.
+tfd_run: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tfd_run
+.PHONY : tfd_run
+
+# fast build rule for target.
+tfd_run/fast:
+	$(MAKE) -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/build
+.PHONY : tfd_run/fast
+
+#=============================================================================
 # Target rules for targets named tx_samples_from_file
 
 # Build rule for target.
@@ -446,6 +459,32 @@ tx_samples_from_file: cmake_check_build_system
 tx_samples_from_file/fast:
 	$(MAKE) -f examples/CMakeFiles/tx_samples_from_file.dir/build.make examples/CMakeFiles/tx_samples_from_file.dir/build
 .PHONY : tx_samples_from_file/fast
+
+#=============================================================================
+# Target rules for targets named rx_samples_to_udp
+
+# Build rule for target.
+rx_samples_to_udp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rx_samples_to_udp
+.PHONY : rx_samples_to_udp
+
+# fast build rule for target.
+rx_samples_to_udp/fast:
+	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
+.PHONY : rx_samples_to_udp/fast
+
+#=============================================================================
+# Target rules for targets named tfd
+
+# Build rule for target.
+tfd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tfd
+.PHONY : tfd
+
+# fast build rule for target.
+tfd/fast:
+	$(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/build
+.PHONY : tfd/fast
 
 #=============================================================================
 # Target rules for targets named gpio
@@ -472,19 +511,6 @@ test_clock_synch: cmake_check_build_system
 test_clock_synch/fast:
 	$(MAKE) -f examples/CMakeFiles/test_clock_synch.dir/build.make examples/CMakeFiles/test_clock_synch.dir/build
 .PHONY : test_clock_synch/fast
-
-#=============================================================================
-# Target rules for targets named tx_samples_c
-
-# Build rule for target.
-tx_samples_c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tx_samples_c
-.PHONY : tx_samples_c
-
-# fast build rule for target.
-tx_samples_c/fast:
-	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
-.PHONY : tx_samples_c/fast
 
 #=============================================================================
 # Target rules for targets named getopt
@@ -1231,6 +1257,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... uhd"
+	@echo "... tx_samples_c"
 	@echo "... sync_to_gps"
 	@echo "... test_dboard_coercion"
 	@echo "... test_pps_input"
@@ -1242,16 +1269,17 @@ help:
 	@echo "... txrx_loopback_to_file"
 	@echo "... rx_samples_c"
 	@echo "... rx_multi_samples"
-	@echo "... rx_samples_to_udp"
 	@echo "... tx_timed_samples"
 	@echo "... tx_waveforms"
 	@echo "... network_relay"
 	@echo "... rx_samples_to_file"
 	@echo "... tx_bursts"
+	@echo "... tfd_run"
 	@echo "... tx_samples_from_file"
+	@echo "... rx_samples_to_udp"
+	@echo "... tfd"
 	@echo "... gpio"
 	@echo "... test_clock_synch"
-	@echo "... tx_samples_c"
 	@echo "... getopt"
 	@echo "... nocscript_expr_test"
 	@echo "... nocscript_parser_test"

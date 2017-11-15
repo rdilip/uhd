@@ -71,8 +71,18 @@ localparam SR_LLR_REG16	  = 180;
 localparam SR_LLR_REG17	  = 181;
 localparam SR_LLR_REG18	  = 182;
 localparam SR_LLR_REG19	  = 183;
-
-
+localparam SR_LLR_REG20   = 184;
+localparam SR_DC_OFFSET	  = 185;
+/*
+localparam SR_LLR_REG22	  = 186;
+localparam SR_LLR_REG23	  = 187;
+localparam SR_LLR_REG24	  = 188;
+localparam SR_LLR_REG25	  = 189;
+localparam SR_LLR_REG26	  = 190;
+localparam SR_LLR_REG27	  = 191;
+localparam SR_LLR_REG28	  = 192;
+localparam SR_LLR_REG29	  = 193;
+*/
 // JTL end
 
 

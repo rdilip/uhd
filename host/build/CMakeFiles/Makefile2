@@ -348,6 +348,7 @@ include/uhd/utils/preinstall:
 # Directory level rules for directory examples
 
 # Convenience name for "all" pass in the directory.
+examples/all: examples/CMakeFiles/tx_samples_c.dir/all
 examples/all: examples/CMakeFiles/sync_to_gps.dir/all
 examples/all: examples/CMakeFiles/test_dboard_coercion.dir/all
 examples/all: examples/CMakeFiles/test_pps_input.dir/all
@@ -359,21 +360,23 @@ examples/all: examples/CMakeFiles/test_messages.dir/all
 examples/all: examples/CMakeFiles/txrx_loopback_to_file.dir/all
 examples/all: examples/CMakeFiles/rx_samples_c.dir/all
 examples/all: examples/CMakeFiles/rx_multi_samples.dir/all
-examples/all: examples/CMakeFiles/rx_samples_to_udp.dir/all
 examples/all: examples/CMakeFiles/tx_timed_samples.dir/all
 examples/all: examples/CMakeFiles/tx_waveforms.dir/all
 examples/all: examples/CMakeFiles/network_relay.dir/all
 examples/all: examples/CMakeFiles/rx_samples_to_file.dir/all
 examples/all: examples/CMakeFiles/tx_bursts.dir/all
+examples/all: examples/CMakeFiles/tfd_run.dir/all
 examples/all: examples/CMakeFiles/tx_samples_from_file.dir/all
+examples/all: examples/CMakeFiles/rx_samples_to_udp.dir/all
+examples/all: examples/CMakeFiles/tfd.dir/all
 examples/all: examples/CMakeFiles/gpio.dir/all
 examples/all: examples/CMakeFiles/test_clock_synch.dir/all
-examples/all: examples/CMakeFiles/tx_samples_c.dir/all
 examples/all: examples/getopt/all
 
 .PHONY : examples/all
 
 # Convenience name for "clean" pass in the directory.
+examples/clean: examples/CMakeFiles/tx_samples_c.dir/clean
 examples/clean: examples/CMakeFiles/sync_to_gps.dir/clean
 examples/clean: examples/CMakeFiles/test_dboard_coercion.dir/clean
 examples/clean: examples/CMakeFiles/test_pps_input.dir/clean
@@ -385,16 +388,17 @@ examples/clean: examples/CMakeFiles/test_messages.dir/clean
 examples/clean: examples/CMakeFiles/txrx_loopback_to_file.dir/clean
 examples/clean: examples/CMakeFiles/rx_samples_c.dir/clean
 examples/clean: examples/CMakeFiles/rx_multi_samples.dir/clean
-examples/clean: examples/CMakeFiles/rx_samples_to_udp.dir/clean
 examples/clean: examples/CMakeFiles/tx_timed_samples.dir/clean
 examples/clean: examples/CMakeFiles/tx_waveforms.dir/clean
 examples/clean: examples/CMakeFiles/network_relay.dir/clean
 examples/clean: examples/CMakeFiles/rx_samples_to_file.dir/clean
 examples/clean: examples/CMakeFiles/tx_bursts.dir/clean
+examples/clean: examples/CMakeFiles/tfd_run.dir/clean
 examples/clean: examples/CMakeFiles/tx_samples_from_file.dir/clean
+examples/clean: examples/CMakeFiles/rx_samples_to_udp.dir/clean
+examples/clean: examples/CMakeFiles/tfd.dir/clean
 examples/clean: examples/CMakeFiles/gpio.dir/clean
 examples/clean: examples/CMakeFiles/test_clock_synch.dir/clean
-examples/clean: examples/CMakeFiles/tx_samples_c.dir/clean
 examples/clean: examples/getopt/clean
 
 .PHONY : examples/clean
@@ -405,13 +409,51 @@ examples/preinstall: examples/getopt/preinstall
 .PHONY : examples/preinstall
 
 #=============================================================================
+# Target rules for target examples/CMakeFiles/tx_samples_c.dir
+
+# All Build rule for target.
+examples/CMakeFiles/tx_samples_c.dir/all: lib/CMakeFiles/uhd.dir/all
+examples/CMakeFiles/tx_samples_c.dir/all: examples/getopt/CMakeFiles/getopt.dir/all
+	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/depend
+	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_samples_c"
+.PHONY : examples/CMakeFiles/tx_samples_c.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/tx_samples_c.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/tx_samples_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_samples_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/tx_samples_c.dir/rule
+
+# Convenience name for target.
+tx_samples_c: examples/CMakeFiles/tx_samples_c.dir/rule
+
+.PHONY : tx_samples_c
+
+# clean rule for target.
+examples/CMakeFiles/tx_samples_c.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/clean
+.PHONY : examples/CMakeFiles/tx_samples_c.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/tx_samples_c.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target examples/CMakeFiles/sync_to_gps.dir
 
 # All Build rule for target.
 examples/CMakeFiles/sync_to_gps.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/sync_to_gps.dir/build.make examples/CMakeFiles/sync_to_gps.dir/depend
 	$(MAKE) -f examples/CMakeFiles/sync_to_gps.dir/build.make examples/CMakeFiles/sync_to_gps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=27 "Built target sync_to_gps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target sync_to_gps"
 .PHONY : examples/CMakeFiles/sync_to_gps.dir/all
 
 # Include target in all.
@@ -421,7 +463,7 @@ all: examples/CMakeFiles/sync_to_gps.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/sync_to_gps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/sync_to_gps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/sync_to_gps.dir/rule
@@ -448,7 +490,7 @@ clean: examples/CMakeFiles/sync_to_gps.dir/clean
 examples/CMakeFiles/test_dboard_coercion.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/test_dboard_coercion.dir/build.make examples/CMakeFiles/test_dboard_coercion.dir/depend
 	$(MAKE) -f examples/CMakeFiles/test_dboard_coercion.dir/build.make examples/CMakeFiles/test_dboard_coercion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=28 "Built target test_dboard_coercion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target test_dboard_coercion"
 .PHONY : examples/CMakeFiles/test_dboard_coercion.dir/all
 
 # Include target in all.
@@ -458,7 +500,7 @@ all: examples/CMakeFiles/test_dboard_coercion.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/test_dboard_coercion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/test_dboard_coercion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/test_dboard_coercion.dir/rule
@@ -485,7 +527,7 @@ clean: examples/CMakeFiles/test_dboard_coercion.dir/clean
 examples/CMakeFiles/test_pps_input.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/test_pps_input.dir/build.make examples/CMakeFiles/test_pps_input.dir/depend
 	$(MAKE) -f examples/CMakeFiles/test_pps_input.dir/build.make examples/CMakeFiles/test_pps_input.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=29 "Built target test_pps_input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target test_pps_input"
 .PHONY : examples/CMakeFiles/test_pps_input.dir/all
 
 # Include target in all.
@@ -495,7 +537,7 @@ all: examples/CMakeFiles/test_pps_input.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/test_pps_input.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/test_pps_input.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/test_pps_input.dir/rule
@@ -522,7 +564,7 @@ clean: examples/CMakeFiles/test_pps_input.dir/clean
 examples/CMakeFiles/test_timed_commands.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/test_timed_commands.dir/build.make examples/CMakeFiles/test_timed_commands.dir/depend
 	$(MAKE) -f examples/CMakeFiles/test_timed_commands.dir/build.make examples/CMakeFiles/test_timed_commands.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target test_timed_commands"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=29 "Built target test_timed_commands"
 .PHONY : examples/CMakeFiles/test_timed_commands.dir/all
 
 # Include target in all.
@@ -532,7 +574,7 @@ all: examples/CMakeFiles/test_timed_commands.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/test_timed_commands.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/test_timed_commands.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/test_timed_commands.dir/rule
@@ -670,7 +712,7 @@ clean: examples/CMakeFiles/benchmark_rate.dir/clean
 examples/CMakeFiles/test_messages.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/test_messages.dir/build.make examples/CMakeFiles/test_messages.dir/depend
 	$(MAKE) -f examples/CMakeFiles/test_messages.dir/build.make examples/CMakeFiles/test_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target test_messages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=28 "Built target test_messages"
 .PHONY : examples/CMakeFiles/test_messages.dir/all
 
 # Include target in all.
@@ -680,7 +722,7 @@ all: examples/CMakeFiles/test_messages.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/test_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/test_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/test_messages.dir/rule
@@ -707,7 +749,7 @@ clean: examples/CMakeFiles/test_messages.dir/clean
 examples/CMakeFiles/txrx_loopback_to_file.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/txrx_loopback_to_file.dir/build.make examples/CMakeFiles/txrx_loopback_to_file.dir/depend
 	$(MAKE) -f examples/CMakeFiles/txrx_loopback_to_file.dir/build.make examples/CMakeFiles/txrx_loopback_to_file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=33 "Built target txrx_loopback_to_file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target txrx_loopback_to_file"
 .PHONY : examples/CMakeFiles/txrx_loopback_to_file.dir/all
 
 # Include target in all.
@@ -717,7 +759,7 @@ all: examples/CMakeFiles/txrx_loopback_to_file.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/txrx_loopback_to_file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/txrx_loopback_to_file.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/txrx_loopback_to_file.dir/rule
@@ -745,7 +787,7 @@ examples/CMakeFiles/rx_samples_c.dir/all: lib/CMakeFiles/uhd.dir/all
 examples/CMakeFiles/rx_samples_c.dir/all: examples/getopt/CMakeFiles/getopt.dir/all
 	$(MAKE) -f examples/CMakeFiles/rx_samples_c.dir/build.make examples/CMakeFiles/rx_samples_c.dir/depend
 	$(MAKE) -f examples/CMakeFiles/rx_samples_c.dir/build.make examples/CMakeFiles/rx_samples_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=22 "Built target rx_samples_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target rx_samples_c"
 .PHONY : examples/CMakeFiles/rx_samples_c.dir/all
 
 # Include target in all.
@@ -755,7 +797,7 @@ all: examples/CMakeFiles/rx_samples_c.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/rx_samples_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/rx_samples_c.dir/rule
@@ -782,7 +824,7 @@ clean: examples/CMakeFiles/rx_samples_c.dir/clean
 examples/CMakeFiles/rx_multi_samples.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/rx_multi_samples.dir/build.make examples/CMakeFiles/rx_multi_samples.dir/depend
 	$(MAKE) -f examples/CMakeFiles/rx_multi_samples.dir/build.make examples/CMakeFiles/rx_multi_samples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target rx_multi_samples"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=21 "Built target rx_multi_samples"
 .PHONY : examples/CMakeFiles/rx_multi_samples.dir/all
 
 # Include target in all.
@@ -792,7 +834,7 @@ all: examples/CMakeFiles/rx_multi_samples.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/rx_multi_samples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_multi_samples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/rx_multi_samples.dir/rule
@@ -813,50 +855,13 @@ clean: examples/CMakeFiles/rx_multi_samples.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target examples/CMakeFiles/rx_samples_to_udp.dir
-
-# All Build rule for target.
-examples/CMakeFiles/rx_samples_to_udp.dir/all: lib/CMakeFiles/uhd.dir/all
-	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/depend
-	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target rx_samples_to_udp"
-.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/rx_samples_to_udp.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/rx_samples_to_udp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_to_udp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/rule
-
-# Convenience name for target.
-rx_samples_to_udp: examples/CMakeFiles/rx_samples_to_udp.dir/rule
-
-.PHONY : rx_samples_to_udp
-
-# clean rule for target.
-examples/CMakeFiles/rx_samples_to_udp.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/clean
-.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/rx_samples_to_udp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target examples/CMakeFiles/tx_timed_samples.dir
 
 # All Build rule for target.
 examples/CMakeFiles/tx_timed_samples.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/tx_timed_samples.dir/build.make examples/CMakeFiles/tx_timed_samples.dir/depend
 	$(MAKE) -f examples/CMakeFiles/tx_timed_samples.dir/build.make examples/CMakeFiles/tx_timed_samples.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=32 "Built target tx_timed_samples"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_timed_samples"
 .PHONY : examples/CMakeFiles/tx_timed_samples.dir/all
 
 # Include target in all.
@@ -866,7 +871,7 @@ all: examples/CMakeFiles/tx_timed_samples.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/tx_timed_samples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_timed_samples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/tx_timed_samples.dir/rule
@@ -893,7 +898,7 @@ clean: examples/CMakeFiles/tx_timed_samples.dir/clean
 examples/CMakeFiles/tx_waveforms.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/tx_waveforms.dir/build.make examples/CMakeFiles/tx_waveforms.dir/depend
 	$(MAKE) -f examples/CMakeFiles/tx_waveforms.dir/build.make examples/CMakeFiles/tx_waveforms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_waveforms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=33 "Built target tx_waveforms"
 .PHONY : examples/CMakeFiles/tx_waveforms.dir/all
 
 # Include target in all.
@@ -903,7 +908,7 @@ all: examples/CMakeFiles/tx_waveforms.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/tx_waveforms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_waveforms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/tx_waveforms.dir/rule
@@ -967,7 +972,7 @@ clean: examples/CMakeFiles/network_relay.dir/clean
 examples/CMakeFiles/rx_samples_to_file.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/rx_samples_to_file.dir/build.make examples/CMakeFiles/rx_samples_to_file.dir/depend
 	$(MAKE) -f examples/CMakeFiles/rx_samples_to_file.dir/build.make examples/CMakeFiles/rx_samples_to_file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target rx_samples_to_file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=22 "Built target rx_samples_to_file"
 .PHONY : examples/CMakeFiles/rx_samples_to_file.dir/all
 
 # Include target in all.
@@ -977,7 +982,7 @@ all: examples/CMakeFiles/rx_samples_to_file.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/rx_samples_to_file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_to_file.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/rx_samples_to_file.dir/rule
@@ -1004,7 +1009,7 @@ clean: examples/CMakeFiles/rx_samples_to_file.dir/clean
 examples/CMakeFiles/tx_bursts.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/tx_bursts.dir/build.make examples/CMakeFiles/tx_bursts.dir/depend
 	$(MAKE) -f examples/CMakeFiles/tx_bursts.dir/build.make examples/CMakeFiles/tx_bursts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_bursts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=31 "Built target tx_bursts"
 .PHONY : examples/CMakeFiles/tx_bursts.dir/all
 
 # Include target in all.
@@ -1014,7 +1019,7 @@ all: examples/CMakeFiles/tx_bursts.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/tx_bursts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_bursts.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/tx_bursts.dir/rule
@@ -1035,13 +1040,50 @@ clean: examples/CMakeFiles/tx_bursts.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target examples/CMakeFiles/tfd_run.dir
+
+# All Build rule for target.
+examples/CMakeFiles/tfd_run.dir/all: lib/CMakeFiles/uhd.dir/all
+	$(MAKE) -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/depend
+	$(MAKE) -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tfd_run"
+.PHONY : examples/CMakeFiles/tfd_run.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/tfd_run.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/tfd_run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tfd_run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/tfd_run.dir/rule
+
+# Convenience name for target.
+tfd_run: examples/CMakeFiles/tfd_run.dir/rule
+
+.PHONY : tfd_run
+
+# clean rule for target.
+examples/CMakeFiles/tfd_run.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/clean
+.PHONY : examples/CMakeFiles/tfd_run.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/tfd_run.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target examples/CMakeFiles/tx_samples_from_file.dir
 
 # All Build rule for target.
 examples/CMakeFiles/tx_samples_from_file.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f examples/CMakeFiles/tx_samples_from_file.dir/build.make examples/CMakeFiles/tx_samples_from_file.dir/depend
 	$(MAKE) -f examples/CMakeFiles/tx_samples_from_file.dir/build.make examples/CMakeFiles/tx_samples_from_file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_samples_from_file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=32 "Built target tx_samples_from_file"
 .PHONY : examples/CMakeFiles/tx_samples_from_file.dir/all
 
 # Include target in all.
@@ -1051,7 +1093,7 @@ all: examples/CMakeFiles/tx_samples_from_file.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/tx_samples_from_file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_samples_from_file.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/tx_samples_from_file.dir/rule
@@ -1068,6 +1110,80 @@ examples/CMakeFiles/tx_samples_from_file.dir/clean:
 
 # clean rule for target.
 clean: examples/CMakeFiles/tx_samples_from_file.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/rx_samples_to_udp.dir
+
+# All Build rule for target.
+examples/CMakeFiles/rx_samples_to_udp.dir/all: lib/CMakeFiles/uhd.dir/all
+	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/depend
+	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target rx_samples_to_udp"
+.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/rx_samples_to_udp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/rx_samples_to_udp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/rx_samples_to_udp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/rule
+
+# Convenience name for target.
+rx_samples_to_udp: examples/CMakeFiles/rx_samples_to_udp.dir/rule
+
+.PHONY : rx_samples_to_udp
+
+# clean rule for target.
+examples/CMakeFiles/rx_samples_to_udp.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/rx_samples_to_udp.dir/build.make examples/CMakeFiles/rx_samples_to_udp.dir/clean
+.PHONY : examples/CMakeFiles/rx_samples_to_udp.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/rx_samples_to_udp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/tfd.dir
+
+# All Build rule for target.
+examples/CMakeFiles/tfd.dir/all: lib/CMakeFiles/uhd.dir/all
+	$(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/depend
+	$(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=30 "Built target tfd"
+.PHONY : examples/CMakeFiles/tfd.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/tfd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/tfd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tfd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/tfd.dir/rule
+
+# Convenience name for target.
+tfd: examples/CMakeFiles/tfd.dir/rule
+
+.PHONY : tfd
+
+# clean rule for target.
+examples/CMakeFiles/tfd.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/clean
+.PHONY : examples/CMakeFiles/tfd.dir/clean
+
+# clean rule for target.
+clean: examples/CMakeFiles/tfd.dir/clean
 
 .PHONY : clean
 
@@ -1142,44 +1258,6 @@ examples/CMakeFiles/test_clock_synch.dir/clean:
 
 # clean rule for target.
 clean: examples/CMakeFiles/test_clock_synch.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target examples/CMakeFiles/tx_samples_c.dir
-
-# All Build rule for target.
-examples/CMakeFiles/tx_samples_c.dir/all: lib/CMakeFiles/uhd.dir/all
-examples/CMakeFiles/tx_samples_c.dir/all: examples/getopt/CMakeFiles/getopt.dir/all
-	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/depend
-	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=31 "Built target tx_samples_c"
-.PHONY : examples/CMakeFiles/tx_samples_c.dir/all
-
-# Include target in all.
-all: examples/CMakeFiles/tx_samples_c.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-examples/CMakeFiles/tx_samples_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
-	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/tx_samples_c.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
-.PHONY : examples/CMakeFiles/tx_samples_c.dir/rule
-
-# Convenience name for target.
-tx_samples_c: examples/CMakeFiles/tx_samples_c.dir/rule
-
-.PHONY : tx_samples_c
-
-# clean rule for target.
-examples/CMakeFiles/tx_samples_c.dir/clean:
-	$(MAKE) -f examples/CMakeFiles/tx_samples_c.dir/build.make examples/CMakeFiles/tx_samples_c.dir/clean
-.PHONY : examples/CMakeFiles/tx_samples_c.dir/clean
-
-# clean rule for target.
-clean: examples/CMakeFiles/tx_samples_c.dir/clean
 
 .PHONY : clean
 
@@ -1331,7 +1409,7 @@ tests/preinstall: tests/devtest/preinstall
 tests/CMakeFiles/nocscript_expr_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/nocscript_expr_test.dir/build.make tests/CMakeFiles/nocscript_expr_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/nocscript_expr_test.dir/build.make tests/CMakeFiles/nocscript_expr_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=16 "Built target nocscript_expr_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target nocscript_expr_test"
 .PHONY : tests/CMakeFiles/nocscript_expr_test.dir/all
 
 # Include target in all.
@@ -1341,7 +1419,7 @@ all: tests/CMakeFiles/nocscript_expr_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/nocscript_expr_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/nocscript_expr_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/nocscript_expr_test.dir/rule
@@ -1368,7 +1446,7 @@ clean: tests/CMakeFiles/nocscript_expr_test.dir/clean
 tests/CMakeFiles/nocscript_parser_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/nocscript_parser_test.dir/build.make tests/CMakeFiles/nocscript_parser_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/nocscript_parser_test.dir/build.make tests/CMakeFiles/nocscript_parser_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=17,18 "Built target nocscript_parser_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=17 "Built target nocscript_parser_test"
 .PHONY : tests/CMakeFiles/nocscript_parser_test.dir/all
 
 # Include target in all.
@@ -1378,7 +1456,7 @@ all: tests/CMakeFiles/nocscript_parser_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/nocscript_parser_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/nocscript_parser_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/nocscript_parser_test.dir/rule
@@ -1405,7 +1483,7 @@ clean: tests/CMakeFiles/nocscript_parser_test.dir/clean
 tests/CMakeFiles/subdev_spec_c_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/subdev_spec_c_test.dir/build.make tests/CMakeFiles/subdev_spec_c_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/subdev_spec_c_test.dir/build.make tests/CMakeFiles/subdev_spec_c_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=26 "Built target subdev_spec_c_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target subdev_spec_c_test"
 .PHONY : tests/CMakeFiles/subdev_spec_c_test.dir/all
 
 # Include target in all.
@@ -1415,7 +1493,7 @@ all: tests/CMakeFiles/subdev_spec_c_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/subdev_spec_c_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/subdev_spec_c_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/subdev_spec_c_test.dir/rule
@@ -1664,7 +1742,7 @@ clean: tests/CMakeFiles/convert_test.dir/clean
 tests/CMakeFiles/subdev_spec_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/subdev_spec_test.dir/build.make tests/CMakeFiles/subdev_spec_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/subdev_spec_test.dir/build.make tests/CMakeFiles/subdev_spec_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target subdev_spec_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=26 "Built target subdev_spec_test"
 .PHONY : tests/CMakeFiles/subdev_spec_test.dir/all
 
 # Include target in all.
@@ -1674,7 +1752,7 @@ all: tests/CMakeFiles/subdev_spec_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/subdev_spec_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/subdev_spec_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/subdev_spec_test.dir/rule
@@ -1701,7 +1779,7 @@ clean: tests/CMakeFiles/subdev_spec_test.dir/clean
 tests/CMakeFiles/nocscript_ftable_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/nocscript_ftable_test.dir/build.make tests/CMakeFiles/nocscript_ftable_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/nocscript_ftable_test.dir/build.make tests/CMakeFiles/nocscript_ftable_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target nocscript_ftable_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=16 "Built target nocscript_ftable_test"
 .PHONY : tests/CMakeFiles/nocscript_ftable_test.dir/all
 
 # Include target in all.
@@ -1711,7 +1789,7 @@ all: tests/CMakeFiles/nocscript_ftable_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/nocscript_ftable_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/nocscript_ftable_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/nocscript_ftable_test.dir/rule
@@ -1775,7 +1853,7 @@ clean: tests/CMakeFiles/cal_container_test.dir/clean
 tests/CMakeFiles/fp_compare_delta_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/fp_compare_delta_test.dir/build.make tests/CMakeFiles/fp_compare_delta_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/fp_compare_delta_test.dir/build.make tests/CMakeFiles/fp_compare_delta_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=8 "Built target fp_compare_delta_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target fp_compare_delta_test"
 .PHONY : tests/CMakeFiles/fp_compare_delta_test.dir/all
 
 # Include target in all.
@@ -1785,7 +1863,7 @@ all: tests/CMakeFiles/fp_compare_delta_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/fp_compare_delta_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fp_compare_delta_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/fp_compare_delta_test.dir/rule
@@ -1812,7 +1890,7 @@ clean: tests/CMakeFiles/fp_compare_delta_test.dir/clean
 tests/CMakeFiles/fp_compare_epsilon_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/fp_compare_epsilon_test.dir/build.make tests/CMakeFiles/fp_compare_epsilon_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/fp_compare_epsilon_test.dir/build.make tests/CMakeFiles/fp_compare_epsilon_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target fp_compare_epsilon_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=8 "Built target fp_compare_epsilon_test"
 .PHONY : tests/CMakeFiles/fp_compare_epsilon_test.dir/all
 
 # Include target in all.
@@ -1822,7 +1900,7 @@ all: tests/CMakeFiles/fp_compare_epsilon_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/fp_compare_epsilon_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fp_compare_epsilon_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/fp_compare_epsilon_test.dir/rule
@@ -2404,7 +2482,7 @@ clean: tests/CMakeFiles/sid_t_test.dir/clean
 tests/CMakeFiles/ranges_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/ranges_test.dir/build.make tests/CMakeFiles/ranges_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/ranges_test.dir/build.make tests/CMakeFiles/ranges_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=21 "Built target ranges_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target ranges_test"
 .PHONY : tests/CMakeFiles/ranges_test.dir/all
 
 # Include target in all.
@@ -2414,7 +2492,7 @@ all: tests/CMakeFiles/ranges_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/ranges_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/ranges_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/ranges_test.dir/rule
@@ -2478,7 +2556,7 @@ clean: tests/CMakeFiles/sph_send_test.dir/clean
 tests/CMakeFiles/time_spec_test.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f tests/CMakeFiles/time_spec_test.dir/build.make tests/CMakeFiles/time_spec_test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/time_spec_test.dir/build.make tests/CMakeFiles/time_spec_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=30 "Built target time_spec_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target time_spec_test"
 .PHONY : tests/CMakeFiles/time_spec_test.dir/all
 
 # Include target in all.
@@ -2488,7 +2566,7 @@ all: tests/CMakeFiles/time_spec_test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/time_spec_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/time_spec_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/time_spec_test.dir/rule
@@ -2640,12 +2718,12 @@ clean: tests/devtest/CMakeFiles/test_x3x0.dir/clean
 tests/devtest/CMakeFiles/test_b2xx.dir/all:
 	$(MAKE) -f tests/devtest/CMakeFiles/test_b2xx.dir/build.make tests/devtest/CMakeFiles/test_b2xx.dir/depend
 	$(MAKE) -f tests/devtest/CMakeFiles/test_b2xx.dir/build.make tests/devtest/CMakeFiles/test_b2xx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target test_b2xx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=27 "Built target test_b2xx"
 .PHONY : tests/devtest/CMakeFiles/test_b2xx.dir/all
 
 # Build rule for subdir invocation for target.
 tests/devtest/CMakeFiles/test_b2xx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 tests/devtest/CMakeFiles/test_b2xx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : tests/devtest/CMakeFiles/test_b2xx.dir/rule
@@ -3316,7 +3394,7 @@ clean: utils/CMakeFiles/usrp_burn_mb_eeprom.dir/clean
 utils/CMakeFiles/octoclock_burn_eeprom.dir/all: lib/CMakeFiles/uhd.dir/all
 	$(MAKE) -f utils/CMakeFiles/octoclock_burn_eeprom.dir/build.make utils/CMakeFiles/octoclock_burn_eeprom.dir/depend
 	$(MAKE) -f utils/CMakeFiles/octoclock_burn_eeprom.dir/build.make utils/CMakeFiles/octoclock_burn_eeprom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target octoclock_burn_eeprom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=18 "Built target octoclock_burn_eeprom"
 .PHONY : utils/CMakeFiles/octoclock_burn_eeprom.dir/all
 
 # Include target in all.
@@ -3326,7 +3404,7 @@ all: utils/CMakeFiles/octoclock_burn_eeprom.dir/all
 
 # Build rule for subdir invocation for target.
 utils/CMakeFiles/octoclock_burn_eeprom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 62
 	$(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/octoclock_burn_eeprom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0
 .PHONY : utils/CMakeFiles/octoclock_burn_eeprom.dir/rule

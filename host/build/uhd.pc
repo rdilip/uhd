@@ -6,7 +6,7 @@ includedir=${prefix}/include
 Name: UHD
 Description: Ettus Research - USRP Hardware Driver
 URL: https://github.com/EttusResearch/uhd
-Version: 3.11.0.git-172-g9dc91b4c
+Version: 3.11.0.git-176-g6242d4ab
 Requires:
 Requires.private: 
 Conflicts:

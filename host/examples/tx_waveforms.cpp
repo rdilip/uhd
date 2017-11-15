@@ -16,6 +16,7 @@
 //
 
 #include "wavetable.hpp"
+#include <uhd/property_tree.hpp>
 #include <uhd/utils/thread_priority.hpp>
 #include <uhd/utils/safe_main.hpp>
 #include <uhd/utils/static.hpp>
@@ -31,12 +32,25 @@
 #include <iostream>
 #include <csignal>
 #include "usage.h"
+//#include "../lib/usrp/cores/radio_ctrl_core_3000.hpp"
+#include <cstdio>
+#include <ctime>
+
+/*
+#include "../lib/usrp/common/ad9361_ctrl.hpp"
+#include "../lib/usrp/b200/b200_regs.hpp"
+#include "../lib/usrp/b200/b200_impl.hpp"
+#include "../lib/usrp/b200/b200_cores.hpp"
+#include "../lib/usrp/b200/b200_uart.hpp"
+#include "../lib/usrp/b200/b200_iface.hpp"
+*/
+
 
 #include <complex>
 #include <uhd/usrp/multi_usrp.hpp>
 #include <vector>
 
-
+#define TOREG(x) ((x)*4)
 
 namespace po = boost::program_options;
 
@@ -48,7 +62,10 @@ void sig_int_handler(int){stop_signal_called = true;}
 
 /***********************************************************************
  * Main function
+ * NOTE that clock frequency is hardcoded in as 32.768... we should give
+ * option to change this at some point.
  **********************************************************************/
+
 static void print_tree(const uhd::property_tree::sptr tree, const std::string prefix) {
   std::cout << prefix << std::endl;
   std::vector<std::string> names = tree->list("");
@@ -57,6 +74,28 @@ static void print_tree(const uhd::property_tree::sptr tree, const std::string pr
     if (subtree)
       print_tree(subtree, prefix+'/'+*it);
   }
+}
+static uint32_t combine(float fq, int am, int ph) {
+	uint32_t comb_fq_am_ph;
+	uint16_t fq0;
+	uint8_t am0, ph0;
+	am0 = (uint8_t)(am * 254);
+	ph0 = (uint8_t)(ph * 254 / 6.28);
+	fq0 = (uint16_t)((fq / 32.768) * std::pow(2,16));
+	comb_fq_am_ph = ph0;
+	comb_fq_am_ph = (comb_fq_am_ph << 8) | am0;
+	comb_fq_am_ph = (comb_fq_am_ph << 16) | fq0;
+	return comb_fq_am_ph;
+}
+
+static void set_tone(uhd::property_tree::sptr tree, int index, float fq, int am, int ph) {
+	const uhd::fs_path mb_path = "/mboards/0";
+	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
+
+	uint32_t comb_fq_am_ph;
+	comb_fq_am_ph = combine(fq, am, ph);
+
+	tree->access<uint32_t>(rx_dsp_path / "llr_reg" + std::to_string(index)).set(comb_fq_am_ph);
 }
 
 int UHD_SAFE_MAIN(int argc, char *argv[]){
@@ -120,32 +159,6 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
 
     //Lock mboard clocks
     usrp->set_clock_source(ref);
-    //////////////////////////////////////////////////////////
-    // JTL's code
-/*
-    uhd::property_tree::sptr tree;
-    uint32_t ll_values=1117180427;
-	print_tree(tree, "JTL");	
-    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg0")
-          .set(ll_values);
-		  */
-
-/*
-    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg1")
-          .set(ll_values);
-    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg2")
-          .set(ll_values);
-    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg3")
-          .set(ll_values);
-    tree->access<uint32_t>("/mboards/0/rx_dsps/0/llr_reg4")
-          .set(ll_values);
-*/
-
-    //USRPController m;
-    //m.programLLRValues(); 
-    // END JTL CODE
-    //////////////////////////////////////////////////////////
-
     //always select the subdevice first, the channel mapping affects the other settings
     if (vm.count("subdev")) usrp->set_tx_subdev_spec(subdev);
 
@@ -157,7 +170,7 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
         return ~0;
     }
     std::cout << boost::format("Setting TX Rate: %f Msps...") % (rate/1e6) << std::endl;
-    usrp->set_tx_rate(rate);
+//    usrp->set_tx_rate(rate);
     std::cout << boost::format("Actual TX Rate: %f Msps...") % (usrp->get_tx_rate()/1e6) << std::endl << std::endl;
 
     //set the center frequency
@@ -170,7 +183,7 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
         std::cout << boost::format("Setting TX Freq: %f MHz...") % (freq/1e6) << std::endl;
         uhd::tune_request_t tune_request(freq);
         if(vm.count("int-n")) tune_request.args = uhd::device_addr_t("mode_n=integer");
-        usrp->set_tx_freq(tune_request, channel_nums[ch]);
+        usrp->set_tx_freq(tune_request);
         std::cout << boost::format("Actual TX Freq: %f MHz...") % (usrp->get_tx_freq(channel_nums[ch])/1e6) << std::endl << std::endl;
 
         //set the rf gain
@@ -181,35 +194,22 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
         }
 
         //set the analog frontend filter bandwidth
+		  /*
         if (vm.count("bw")){
             std::cout << boost::format("Setting TX Bandwidth: %f MHz...") % bw << std::endl;
             usrp->set_tx_bandwidth(bw, channel_nums[ch]);
             std::cout << boost::format("Actual TX Bandwidth: %f MHz...") % usrp->get_tx_bandwidth(channel_nums[ch]) << std::endl << std::endl;
         }
 
+*/
         //set the antenna
+		  /*
         if (vm.count("ant")) usrp->set_tx_antenna(ant, channel_nums[ch]);
+		  */
     }
 
     boost::this_thread::sleep(boost::posix_time::seconds(1)); //allow for some setup time
 
-    //for the const wave, set the wave freq for small samples per period
-    if (wave_freq == 0 and wave_type == "CONST"){
-        wave_freq = usrp->get_tx_rate()/2;
-    }
-
-    //error when the waveform is not possible to generate
-    if (std::abs(wave_freq) > usrp->get_tx_rate()/2){
-        throw std::runtime_error("wave freq out of Nyquist zone");
-    }
-    if (usrp->get_tx_rate()/std::abs(wave_freq) > wave_table_len/2){
-        throw std::runtime_error("wave freq too small for table");
-    }
-
-    //pre-compute the waveform values
-    const wave_table_class wave_table(wave_type, ampl);
-    const size_t step = boost::math::iround(wave_freq/usrp->get_tx_rate() * wave_table_len);
-    size_t index = 0;
 
     //create a transmit streamer
     //linearly map channels (index0 = channel0, index1 = channel1, ...)
@@ -222,95 +222,42 @@ int UHD_SAFE_MAIN(int argc, char *argv[]){
     std::vector<std::complex<float> > buff(spb);
     std::vector<std::complex<float> *> buffs(channel_nums.size(), &buff.front());
 
-    std::cout << boost::format("Setting device timestamp to 0...") << std::endl;
-    if (channel_nums.size() > 1)
-    {
-        // Sync times
-        if (pps == "mimo")
-        {
-            UHD_ASSERT_THROW(usrp->get_num_mboards() == 2);
-
-            //make mboard 1 a slave over the MIMO Cable
-            usrp->set_time_source("mimo", 1);
-
-            //set time on the master (mboard 0)
-            usrp->set_time_now(uhd::time_spec_t(0.0), 0);
-
-            //sleep a bit while the slave locks its time to the master
-            boost::this_thread::sleep(boost::posix_time::milliseconds(100));
-        }
-        else
-        {
-            if (pps == "internal" or pps == "external" or pps == "gpsdo")
-                usrp->set_time_source(pps);
-            usrp->set_time_unknown_pps(uhd::time_spec_t(0.0));
-            boost::this_thread::sleep(boost::posix_time::seconds(1)); //wait for pps sync pulse
-        }
-    }
-    else
-    {
-        usrp->set_time_now(0.0);
-    }
-
-    //Check Ref and LO Lock detect
-    std::vector<std::string> sensor_names;
-    const size_t tx_sensor_chan = channel_list.empty() ? 0 : boost::lexical_cast<size_t>(channel_list[0]);
-    sensor_names = usrp->get_tx_sensor_names(tx_sensor_chan);
-    if (std::find(sensor_names.begin(), sensor_names.end(), "lo_locked") != sensor_names.end()) {
-        uhd::sensor_value_t lo_locked = usrp->get_tx_sensor("lo_locked", tx_sensor_chan);
-        std::cout << boost::format("Checking TX: %s ...") % lo_locked.to_pp_string() << std::endl;
-        UHD_ASSERT_THROW(lo_locked.to_bool());
-    }
-    const size_t mboard_sensor_idx = 0;
-    sensor_names = usrp->get_mboard_sensor_names(mboard_sensor_idx);
-    if ((ref == "mimo") and (std::find(sensor_names.begin(), sensor_names.end(), "mimo_locked") != sensor_names.end())) {
-        uhd::sensor_value_t mimo_locked = usrp->get_mboard_sensor("mimo_locked", mboard_sensor_idx);
-        std::cout << boost::format("Checking TX: %s ...") % mimo_locked.to_pp_string() << std::endl;
-        UHD_ASSERT_THROW(mimo_locked.to_bool());
-    }
-    if ((ref == "external") and (std::find(sensor_names.begin(), sensor_names.end(), "ref_locked") != sensor_names.end())) {
-        uhd::sensor_value_t ref_locked = usrp->get_mboard_sensor("ref_locked", mboard_sensor_idx);
-        std::cout << boost::format("Checking TX: %s ...") % ref_locked.to_pp_string() << std::endl;
-        UHD_ASSERT_THROW(ref_locked.to_bool());
-    }
-
     std::signal(SIGINT, &sig_int_handler);
     std::cout << "Press Ctrl + C to stop streaming..." << std::endl;
 
     // Set up metadata. We start streaming a bit in the future
     // to allow MIMO operation:
     uhd::tx_metadata_t md;
-    md.start_of_burst = true;
-    md.end_of_burst   = false;
-    md.has_time_spec  = true;
-    md.time_spec = usrp->get_time_now() + uhd::time_spec_t(0.1);
+   	// STARTING JTL 
 
-    //send data until the signal handler gets called
-    //or if we accumulate the number of samples specified (unless it's 0)
-    uint64_t num_acc_samps = 0;
-    while(true){
+	// JTL CODE
+	const uhd::fs_path mb_path = "/mboards/0";
 
+	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
+
+
+	uhd::property_tree::sptr _tree;
+	uhd::device::sptr dev;
+	dev = usrp->get_device();
+	_tree = dev->get_tree();
+
+	std::clock_t start;
+	double duration;
+
+	start = std::clock();
+	set_tone(_tree, 1, 2.0, 1.0, 0.0);
+	set_tone(_tree, 2, 4.0, 1.0, 0.0);
+	set_tone(_tree, 3, 5.0, 1.0, 0.0);
+	while (true) {
         if (stop_signal_called) break;
-        if (total_num_samps > 0 and num_acc_samps >= total_num_samps) break;
 
-        //fill the buffer with the waveform
-        for (size_t n = 0; n < buff.size(); n++){
-            buff[n] = wave_table(index += step);
-        }
-
-        //send the entire contents of the buffer
-        num_acc_samps += tx_stream->send(
-            buffs, buff.size(), md
-        );
-
-        md.start_of_burst = false;
-        md.has_time_spec = false;
-    }
-
-    //send a mini EOB packet
-    md.end_of_burst = true;
-    tx_stream->send("", 0, md);
-
+        tx_stream->send(buffs, buff.size(), md);
+		// CHECKING ABILITY TO CHANGE, ALL THIS TO BE DELETED
+		duration = (std::clock() - start) / CLOCKS_PER_SEC;
+		if (duration > 3) {
+			set_tone(_tree, 3, 7.0, 1.0, 0.0);
+		}
+	}
     //finished
     std::cout << std::endl << "Done!" << std::endl << std::endl;
     return EXIT_SUCCESS;

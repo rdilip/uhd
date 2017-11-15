@@ -1,0 +1,24 @@
+
+make -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/depend
+cd /home/thompsonlab/Documents/uhd/host/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thompsonlab/Documents/uhd/host /home/thompsonlab/Documents/uhd/host/examples /home/thompsonlab/Documents/uhd/host/build /home/thompsonlab/Documents/uhd/host/build/examples /home/thompsonlab/Documents/uhd/host/build/examples/CMakeFiles/tfd_run.dir/DependInfo.cmake --color=
+make -f examples/CMakeFiles/tfd_run.dir/build.make examples/CMakeFiles/tfd_run.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tfd_run"
+cd /home/thompsonlab/Documents/uhd/host/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thompsonlab/Documents/uhd/host /home/thompsonlab/Documents/uhd/host/examples /home/thompsonlab/Documents/uhd/host/build /home/thompsonlab/Documents/uhd/host/build/examples /home/thompsonlab/Documents/uhd/host/build/examples/CMakeFiles/tx_samples_from_file.dir/DependInfo.cmake --color=
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target tx_samples_from_file"
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Linking CXX executable testboost"
+cd /home/thompsonlab/Documents/uhd/host/build/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/testboost.dir/link.txt --verbose=
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Built target testboost"
+make -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/depend
+cd /home/thompsonlab/Documents/uhd/host/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thompsonlab/Documents/uhd/host /home/thompsonlab/Documents/uhd/host/examples /home/thompsonlab/Documents/uhd/host/build /home/thompsonlab/Documents/uhd/host/build/examples /home/thompsonlab/Documents/uhd/host/build/examples/CMakeFiles/tfd.dir/DependInfo.cmake --color=
+make -f examples/CMakeFiles/tfd.dir/build.make examples/CMakeFiles/tfd.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num= "Linking CXX executable tfd"
+cd /home/thompsonlab/Documents/uhd/host/build/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/tfd.dir/link.txt --verbose=
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=30 "Built target tfd"
+make -f examples/CMakeFiles/gpio.dir/build.make examples/CMakeFiles/gpio.dir/depend
+cd /home/thompsonlab/Documents/uhd/host/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thompsonlab/Documents/uhd/host /home/thompsonlab/Documents/uhd/host/examples /home/thompsonlab/Documents/uhd/host/build /home/thompsonlab/Documents/uhd/host/build/examples /home/thompsonlab/Documents/uhd/host/build/examples/CMakeFiles/gpio.dir/DependInfo.cmake --color=
+make -f examples/CMakeFiles/gpio.dir/build.make examples/CMakeFiles/gpio.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=10 "Linking CXX executable gpio"
+cd /home/thompsonlab/Documents/uhd/host/build/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/gpio.dir/link.txt --verbose=
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/thompsonlab/Documents/uhd/host/build/CMakeFiles --progress-num=10 "Built target gpio"
+cd /home/thompsonlab/Documents/uhd/host/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thompsonlab/Documents/uhd/host /home/thompsonlab/Documents/uhd/host/examples /home/thompsonlab/Documents/uhd/host/build /home/thompsonlab/Documents/uhd/host/build/examples /home/thompsonlab/Documents/uhd/host/build/examples/CMakeFiles/test_clock_synch.dir/DependInfo.cmake --color=
+/usr/bin/cmake -E cmake_progress_start /home/thompsonlab/Documents/uhd/host/build/CMakeFiles 0

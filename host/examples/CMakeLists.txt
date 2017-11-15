@@ -33,6 +33,8 @@ SET(example_sources
     tx_samples_from_file.cpp
     tx_timed_samples.cpp
     tx_waveforms.cpp
+	 tfd/tfd.cpp
+	 tfd/tfd_run.cpp
     txrx_loopback_to_file.cpp
     latency_test.cpp
     gpio.cpp
@@ -47,7 +49,7 @@ ENDIF(ENABLE_OCTOCLOCK)
 FOREACH(example_source ${example_sources})
     GET_FILENAME_COMPONENT(example_name ${example_source} NAME_WE)
     ADD_EXECUTABLE(${example_name} ${example_source})
-    TARGET_LINK_LIBRARIES(${example_name} uhd ${Boost_LIBRARIES})
+    TARGET_LINK_LIBRARIES(${example_name} uhd zmq ${Boost_LIBRARIES})
     UHD_INSTALL(TARGETS ${example_name} RUNTIME DESTINATION ${PKG_LIB_DIR}/examples COMPONENT examples)
 ENDFOREACH(example_source)
 

@@ -14,6 +14,7 @@
 				32.768, uint64_t _spb = 0);
 			~tfd();
 			void set_freq(int _index, float _fq, float _am, float _ph); // Sets a frequency
+			void set_offset(uint16_t dc_offset);
 			void print_parameters();	// Prints frequency, gain, clock_rate, and spb
 			void run();
 			void listen();
