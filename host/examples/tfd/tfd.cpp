@@ -45,7 +45,7 @@ int debug_mode = 0; // If 1, extracts bin file from Desktop/build
 bool run_complete = false;
 const int N = 20; // Number of tones
 float amplitudes[N] = {-1.0};
-float dc_offset = 0;
+float dc_offset = 0.0;
 
 static void update(uhd::tx_streamer::sptr _tx_stream, std::vector<std::complex<float> > buff,
 	std::vector<std::complex<float> *> buffs, uhd::tx_metadata_t md) {	
@@ -158,10 +158,11 @@ void tfd::set_freq(int _index, float _fq, float _am, float _ph) {
 	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
 
 	uint32_t comb_fq_am_ph;
+	// RHS is indices 0 through 15, LHS is 16 through 31
 	comb_fq_am_ph = combine(_fq, _am, _ph);
 
 	if (amplitudes[_index] < 0) {
-		dc_offset += _am;
+			dc_offset += _am;
 	} else {
 		dc_offset += (-1.0 * amplitudes[_index] + _am);
 	}
@@ -171,10 +172,23 @@ void tfd::set_freq(int _index, float _fq, float _am, float _ph) {
 	tree->access<uint32_t>(rx_dsp_path / "llr_reg" + std::to_string(_index)).set(comb_fq_am_ph);
 }
 
-void tfd::set_offset(uint16_t _dc_offset) {
+void tfd::set_offset_l(uint16_t _dc_offset_l) {
 	const uhd::fs_path mb_path = "/mboards/0";
 	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
-	tree->access<uint16_t>(rx_dsp_path / "dc_offset").set(_dc_offset);
+	tree->access<uint16_t>(rx_dsp_path / "dc_offset_l").set(_dc_offset_l);
+}
+
+void tfd::set_offset_r(uint16_t _dc_offset_r) {
+	const uhd::fs_path mb_path = "/mboards/0";
+	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
+	tree->access<uint16_t>(rx_dsp_path / "dc_offset_r").set(_dc_offset_r);
+}
+
+void tfd::set_offsets(uint16_t _dc_offset_l, uint16_t _dc_offset_r) {
+	const uhd::fs_path mb_path = "/mboards/0";
+	const uhd::fs_path rx_dsp_path = mb_path / "rx_dsps" / 0;
+	tree->access<uint16_t>(rx_dsp_path / "dc_offset_l").set(_dc_offset_l);
+	tree->access<uint16_t>(rx_dsp_path / "dc_offset_r").set(_dc_offset_r);
 }
 
 void tfd::print_parameters()	{
@@ -191,6 +205,7 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 	float ph;
 	int i;
 	float dc;
+	float dcl, dcr;
 
 	float freq;
 	float  gain;
@@ -222,7 +237,10 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 
 	while (true) {
 
-		mytfd.set_offset(std::pow(2,16) - (uint16_t)(327 * dc_offset));
+//		mytfd.set_offsets(std::pow(2,16) - (uint16_t)(327 * dc_offsets[0]), 
+//			std::pow(2,16) - (uint16_t)(327 * dc_offsets[1]));
+		mytfd.set_offsets(std::pow(2, 16) - (uint16_t)(162 * dc_offset),
+			std::pow(2, 16) - (uint16_t)(162 * dc_offset));
 		zmq::message_t request;
 		socket.recv(&request);
 		std::string replyMessage = std::string(static_cast<char *>(request.data()), request.size());
@@ -230,7 +248,6 @@ int UHD_SAFE_MAIN (int argc, char *argv[]) {
 		is >> i >> fq >> amp >> ph;
 
 		mytfd.set_freq(i, fq, amp, ph);
-		// 5 is just there so I don't suddenly shoot to an insanely high value
 		
 		sleep(0.25);
 
